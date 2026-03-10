@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lector de Ruso — Pronunciación</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF8F5;
+    --bg-card: #FFFFFF;
+    --text: #1A1A1A;
+    --text-secondary: #6B6560;
+    --accent: #C53030;
+    --accent-light: #FFF5F5;
+    --accent-hover: #9B2C2C;
+    --border: #E8E4DF;
+    --shadow: 0 2px 16px rgba(0,0,0,0.06);
+    --shadow-hover: 0 4px 24px rgba(0,0,0,0.1);
+    --radius: 12px;
+    --russian-font: 'Cormorant Garamond', serif;
+    --body-font: 'Nunito Sans', sans-serif;
+    --mono-font: 'JetBrains Mono', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--body-font);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  /* Subtle grain texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    animation: fadeDown 0.6s ease;
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  header h1 {
+    font-family: var(--russian-font);
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  header h1 span {
+    color: var(--accent);
+  }
+
+  header p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 300;
+  }
+
+  /* API Key Section */
+  .api-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+    animation: fadeUp 0.5s ease 0.1s both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .api-section summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+  }
+
+  .api-section summary::before {
+    content: '🔑';
+    font-size: 1rem;
+  }
+
+  .api-section summary::after {
+    content: '▸';
+    margin-left: auto;
+    transition: transform 0.2s;
+    font-size: 0.8rem;
+  }
+
+  .api-section[open] summary::after {
+    transform: rotate(90deg);
+  }
+
+  .api-inner {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .api-inner input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: var(--mono-font);
+    font-size: 0.85rem;
+    background: var(--bg);
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .api-inner input:focus {
+    border-color: var(--accent);
+  }
+
+  .api-inner button {
+    padding: 10px 18px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .api-inner button:hover {
+    background: var(--accent-hover);
+  }
+
+  .api-status {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+
+  .api-status.ok { color: #2F855A; }
+  .api-status.err { color: var(--accent); }
+
+  /* Upload Zone */
+  .upload-zone {
+    border: 2px dashed var(--border);
+    border-radius: var(--radius);
+    padding: 48px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--bg-card);
+    animation: fadeUp 0.5s ease 0.2s both;
+    position: relative;
+  }
+
+  .upload-zone:hover, .upload-zone.dragover {
+    border-color: var(--accent);
+    background: var(--accent-light);
+  }
+
+  .upload-zone input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .upload-icon {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+  }
+
+  .upload-zone h3 {
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+  }
+
+  .upload-zone p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+  /* Markdown format hint */
+  .format-hint {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-top: 20px;
+    animation: fadeUp 0.5s ease 0.3s both;
+  }
+
+  .format-hint h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+  }
+
+  .format-hint pre {
+    background: #2D2D2D;
+    color: #E8E4DF;
+    padding: 16px;
+    border-radius: 8px;
+    font-family: var(--mono-font);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    overflow-x: auto;
+  }
+
+  .format-hint pre span.comment { color: #7C9C6B; }
+  .format-hint pre span.heading { color: #D19A66; }
+  .format-hint pre span.ru { color: #E06C75; }
+  .format-hint pre span.es { color: #98C379; }
+
+  /* Content Area */
+  .content {
+    display: none;
+  }
+
+  .content.visible {
+    display: block;
+  }
+
+  .file-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    box-shadow: var(--shadow);
+  }
+
+  .file-info .name {
+    font-family: var(--mono-font);
+    font-size: 0.85rem;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .file-info .actions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .btn-small {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    font-family: var(--body-font);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-secondary);
+  }
+
+  .btn-small:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .btn-play-all {
+    background: var(--accent);
+    color: white !important;
+    border-color: var(--accent);
+  }
+
+  .btn-play-all:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+  }
+
+  /* Section heading from markdown */
+  .section-title {
+    font-family: var(--russian-font);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 36px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
+    color: var(--text);
+    animation: fadeUp 0.4s ease both;
+  }
+
+  .section-title:first-child {
+    margin-top: 0;
+  }
+
+  /* Word Card */
+  .word-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: var(--shadow);
+    transition: all 0.25s ease;
+    animation: fadeUp 0.4s ease both;
+    cursor: default;
+  }
+
+  .word-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+  }
+
+  .play-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+    position: relative;
+  }
+
+  .play-btn:hover {
+    background: var(--accent);
+    color: white;
+    transform: scale(1.08);
+  }
+
+  .play-btn.playing {
+    background: var(--accent);
+    color: white;
+    animation: pulse 1s ease infinite;
+    cursor: pointer;
+  }
+
+  .play-btn.playing:hover {
+    background: var(--accent-hover);
+    transform: scale(1.08);
+  }
+
+  .play-btn.disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
+    border-color: #BBBAB8;
+    color: #BBBAB8;
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(197, 48, 48, 0.3); }
+    50% { box-shadow: 0 0 0 8px rgba(197, 48, 48, 0); }
+  }
+
+  .play-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .play-btn .icon-stop {
+    display: none;
+  }
+
+  .play-btn.playing .icon-play {
+    display: none;
+  }
+
+  .play-btn.playing .icon-stop {
+    display: block;
+  }
+
+  .word-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .word-russian {
+    font-family: var(--russian-font);
+    font-size: 1.55rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+    margin-bottom: 2px;
+  }
+
+  .word-translation {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+  }
+
+  .speed-control {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .speed-btn {
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    font-family: var(--mono-font);
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .speed-btn:hover, .speed-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-light);
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container { padding: 24px 16px 60px; }
+    header h1 { font-size: 2rem; }
+    .word-card { padding: 16px; gap: 14px; }
+    .word-russian { font-size: 1.3rem; }
+    .speed-control { display: none; }
+    .api-inner { flex-direction: column; }
+    .file-info { flex-direction: column; gap: 10px; text-align: center; }
+  }
+
+  /* Toast notification */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: #2D2D2D;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.35s ease;
+    pointer-events: none;
+  }
+
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Читать <span>по-русски</span></h1>
+    <p>Carga tu vocabulario en Markdown y escucha la pronunciación</p>
+  </header>
+
+  <!-- API Key -->
+  <details class="api-section" id="apiSection">
+    <summary>Configurar ElevenLabs API Key <small>(opcional, mejora la voz)</small></summary>
+    <div class="api-inner">
+      <input type="password" id="apiKeyInput" placeholder="sk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+      <button onclick="saveApiKey()">Guardar</button>
+    </div>
+    <div class="api-status" id="apiStatus"></div>
+  </details>
+
+  <!-- Upload -->
+  <div class="upload-zone" id="uploadZone">
+    <input type="file" accept=".md,.markdown,.txt" id="fileInput" />
+    <div class="upload-icon">📄</div>
+    <h3>Arrastra tu archivo Markdown aquí</h3>
+    <p>o haz clic para seleccionarlo — .md, .markdown, .txt</p>
+  </div>
+
+  <div class="format-hint">
+    <h4>📋 Formato esperado del Markdown:</h4>
+    <pre><span class="comment"># Sección (opcional)</span>
+
+<span class="ru">Привет</span> <span class="comment">—</span> <span class="es">Hola</span>
+<span class="ru">Спасибо</span> <span class="comment">—</span> <span class="es">Gracias</span>
+<span class="ru">Как дела?</span> <span class="comment">—</span> <span class="es">¿Cómo estás?</span>
+<span class="ru">Доброе утро</span> <span class="comment">—</span> <span class="es">Buenos días</span>
+
+<span class="comment"># Otra sección</span>
+<span class="ru">Я не понимаю</span> <span class="comment">—</span> <span class="es">No entiendo</span></pre>
+  </div>
+
+  <!-- Content rendered here -->
+  <div class="content" id="content"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  // ─── State ───
+  let elevenLabsKey = localStorage.getItem('elevenLabsKey') || '';
+  let currentSpeed = 1;
+  let isPlaying = false;
+
+  // ─── Toast ───
+  function toast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2500);
+  }
+
+  // ─── API Key ───
+  function saveApiKey() {
+    const key = document.getElementById('apiKeyInput').value.trim();
+    if (!key) return;
+    elevenLabsKey = key;
+    localStorage.setItem('elevenLabsKey', key);
+    const status = document.getElementById('apiStatus');
+    status.textContent = '✓ API Key guardada';
+    status.className = 'api-status ok';
+    toast('API Key de ElevenLabs guardada');
+  }
+
+  // Load saved key
+  if (elevenLabsKey) {
+    document.getElementById('apiKeyInput').value = elevenLabsKey;
+    document.getElementById('apiStatus').textContent = '✓ API Key cargada';
+    document.getElementById('apiStatus').className = 'api-status ok';
+  }
+
+  // ─── File Upload ───
+  const uploadZone = document.getElementById('uploadZone');
+  const fileInput = document.getElementById('fileInput');
+
+  uploadZone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    uploadZone.classList.add('dragover');
+  });
+
+  uploadZone.addEventListener('dragleave', () => {
+    uploadZone.classList.remove('dragover');
+  });
+
+  uploadZone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    uploadZone.classList.remove('dragover');
+    const file = e.dataTransfer.files[0];
+    if (file) handleFile(file);
+  });
+
+  fileInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (file) handleFile(file);
+  });
+
+  function handleFile(file) {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const text = e.target.result;
+      parseAndRender(text, file.name);
+    };
+    reader.readAsText(file);
+  }
+
+  // ─── Parser ───
+  function parseMarkdown(text) {
+    const lines = text.split('\n');
+    const sections = [];
+    let currentSection = { title: null, words: [] };
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed) continue;
+
+      // Heading
+      const headingMatch = trimmed.match(/^#+\s+(.+)/);
+      if (headingMatch) {
+        if (currentSection.title || currentSection.words.length > 0) {
+          sections.push(currentSection);
+        }
+        currentSection = { title: headingMatch[1], words: [] };
+        continue;
+      }
+
+      // Word line: russian — spanish (supports —, -, –, |, :)
+      const wordMatch = trimmed.match(/^(.+?)\s+[—–]\s+(.+)$/);
+      if (wordMatch) {
+        const russian = wordMatch[1].trim();
+        const translation = wordMatch[2].trim();
+        // Check if it contains at least one Cyrillic character
+        if (/[\u0400-\u04FF]/.test(russian)) {
+          currentSection.words.push({ russian, translation });
+        }
+      }
+    }
+
+    if (currentSection.title || currentSection.words.length > 0) {
+      sections.push(currentSection);
+    }
+
+    return sections;
+  }
+
+  // ─── Render ───
+  function parseAndRender(text, fileName) {
+    const sections = parseMarkdown(text);
+    const contentEl = document.getElementById('content');
+
+    if (sections.every(s => s.words.length === 0)) {
+      toast('No se encontraron pares ruso — español');
+      return;
+    }
+
+    const totalWords = sections.reduce((sum, s) => sum + s.words.length, 0);
+
+    let html = `
+      <div class="file-info">
+        <span class="name">📄 ${fileName} — ${totalWords} palabras/frases</span>
+        <div class="actions">
+          <button class="btn-small btn-play-all" onclick="playAll()">▶ Reproducir todo</button>
+          <button class="btn-small" onclick="resetView()">✕ Cerrar</button>
+        </div>
+      </div>
+    `;
+
+    let cardIndex = 0;
+    for (const section of sections) {
+      if (section.title) {
+        html += `<div class="section-title" style="animation-delay: ${cardIndex * 0.04}s">${section.title}</div>`;
+      }
+      for (const word of section.words) {
+        const delay = cardIndex * 0.04;
+        html += `
+          <div class="word-card" style="animation-delay: ${delay}s" data-russian="${escapeAttr(word.russian)}">
+            <button class="play-btn" onclick="toggleSpeak('${escapeJs(word.russian)}', this)" title="Reproducir">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
+              <svg class="icon-stop" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>
+            </button>
+            <div class="word-text">
+              <div class="word-russian">${escapeHtml(word.russian)}</div>
+              <div class="word-translation">${escapeHtml(word.translation)}</div>
+            </div>
+            <div class="speed-control">
+              <button class="speed-btn ${currentSpeed === 0.5 ? 'active' : ''}" onclick="setSpeed(0.5, this)">0.5×</button>
+              <button class="speed-btn ${currentSpeed === 0.7 ? 'active' : ''}" onclick="setSpeed(0.7, this)">0.7×</button>
+              <button class="speed-btn ${currentSpeed === 1 ? 'active' : ''}" onclick="setSpeed(1, this)">1×</button>
+            </div>
+          </div>
+        `;
+        cardIndex++;
+      }
+    }
+
+    contentEl.innerHTML = html;
+    contentEl.classList.add('visible');
+    uploadZone.style.display = 'none';
+    document.querySelector('.format-hint').style.display = 'none';
+    toast(`${totalWords} palabras cargadas`);
+  }
+
+  function resetView() {
+    document.getElementById('content').classList.remove('visible');
+    document.getElementById('content').innerHTML = '';
+    uploadZone.style.display = '';
+    document.querySelector('.format-hint').style.display = '';
+    fileInput.value = '';
+  }
+
+  // ─── TTS ───
+  let currentAudio = null;
+  let currentUtterance = null;
+  let activeBtn = null;
+  let playAllAborted = false;
+
+  function disableAllPlayBtns(exceptBtn) {
+    document.querySelectorAll('.play-btn').forEach(btn => {
+      if (btn !== exceptBtn) btn.classList.add('disabled');
+    });
+  }
+
+  function enableAllPlayBtns() {
+    document.querySelectorAll('.play-btn').forEach(btn => {
+      btn.classList.remove('disabled');
+    });
+  }
+
+  function stopCurrent() {
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+      currentAudio = null;
+    }
+    if (currentUtterance) {
+      speechSynthesis.cancel();
+      currentUtterance = null;
+    }
+    if (activeBtn) {
+      activeBtn.classList.remove('playing');
+      activeBtn = null;
+    }
+    enableAllPlayBtns();
+    isPlaying = false;
+  }
+
+  function toggleSpeak(text, btnEl) {
+    // If this button is currently playing, stop it
+    if (btnEl.classList.contains('playing')) {
+      playAllAborted = true;
+      stopCurrent();
+      return;
+    }
+    // If something else is playing, ignore (button should be disabled anyway)
+    if (isPlaying) return;
+
+    startSpeak(text, btnEl);
+  }
+
+  async function startSpeak(text, btnEl) {
+    isPlaying = true;
+    activeBtn = btnEl;
+    btnEl.classList.add('playing');
+    disableAllPlayBtns(btnEl);
+
+    try {
+      if (elevenLabsKey) {
+        await speakElevenLabs(text);
+      } else {
+        await speakWebSpeech(text);
+      }
+    } catch (err) {
+      console.warn('ElevenLabs failed, falling back to Web Speech:', err);
+      if (elevenLabsKey) {
+        toast('ElevenLabs falló, usando voz del navegador');
+      }
+      await speakWebSpeech(text);
+    }
+
+    // Clean up after playback finishes naturally
+    if (activeBtn === btnEl) {
+      btnEl.classList.remove('playing');
+      activeBtn = null;
+      enableAllPlayBtns();
+      isPlaying = false;
+    }
+  }
+
+  async function speakElevenLabs(text) {
+    const voiceId = 'EXAVITQu4vr4xnSDxMaL';
+    const url = `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
+
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'xi-api-key': elevenLabsKey
+      },
+      body: JSON.stringify({
+        text: text,
+        model_id: 'eleven_multilingual_v2',
+        voice_settings: {
+          stability: 0.6,
+          similarity_boost: 0.8,
+          speed: currentSpeed
+        }
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error(`ElevenLabs HTTP ${response.status}`);
+    }
+
+    const audioBlob = await response.blob();
+    const audioUrl = URL.createObjectURL(audioBlob);
+    const audio = new Audio(audioUrl);
+    currentAudio = audio;
+
+    return new Promise((resolve) => {
+      audio.onended = () => {
+        URL.revokeObjectURL(audioUrl);
+        currentAudio = null;
+        resolve();
+      };
+      audio.onerror = () => {
+        URL.revokeObjectURL(audioUrl);
+        currentAudio = null;
+        resolve();
+      };
+      audio.play();
+    });
+  }
+
+  function speakWebSpeech(text) {
+    return new Promise((resolve) => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'ru-RU';
+      utterance.rate = currentSpeed;
+
+      const voices = speechSynthesis.getVoices();
+      const ruVoice = voices.find(v => v.lang.startsWith('ru'));
+      if (ruVoice) utterance.voice = ruVoice;
+
+      currentUtterance = utterance;
+      utterance.onend = () => { currentUtterance = null; resolve(); };
+      utterance.onerror = () => { currentUtterance = null; resolve(); };
+      speechSynthesis.speak(utterance);
+    });
+  }
+
+  // Preload voices
+  if ('speechSynthesis' in window) {
+    speechSynthesis.getVoices();
+    speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+  }
+
+  // ─── Speed Control ───
+  function setSpeed(speed, btnEl) {
+    currentSpeed = speed;
+    // Update active state in parent card
+    const card = btnEl.closest('.word-card');
+    card.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
+    btnEl.classList.add('active');
+  }
+
+  // ─── Play All ───
+  async function playAll() {
+    if (isPlaying) {
+      playAllAborted = true;
+      stopCurrent();
+      toast('Reproducción detenida');
+      return;
+    }
+
+    playAllAborted = false;
+    const cards = document.querySelectorAll('.word-card');
+    for (const card of cards) {
+      if (playAllAborted) break;
+      const russian = card.dataset.russian;
+      const btn = card.querySelector('.play-btn');
+      await startSpeak(russian, btn);
+      if (!playAllAborted) {
+        await new Promise(r => setTimeout(r, 600));
+      }
+    }
+    playAllAborted = false;
+    stopCurrent();
+    if (!playAllAborted) toast('Reproducción completa');
+  }
+
+  // ─── Helpers ───
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function escapeAttr(str) {
+    return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function escapeJs(str) {
+    return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '\\"');
+  }
+</script>
+
+</body>
+</html>
