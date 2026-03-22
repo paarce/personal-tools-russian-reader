@@ -83,100 +83,143 @@
     font-weight: 300;
   }
 
-  /* API Key Section */
-  .api-section {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 20px 24px;
-    margin-bottom: 24px;
-    box-shadow: var(--shadow);
-    animation: fadeUp 0.5s ease 0.1s both;
-  }
-
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .api-section summary {
+  /* Floating API Key Button */
+  .fab-key {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     cursor: pointer;
-    font-weight: 600;
-    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    z-index: 100;
+    transition: all 0.2s ease;
     color: var(--text-secondary);
-    list-style: none;
+  }
+
+  .fab-key:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.16);
+    transform: scale(1.08);
+    border-color: var(--accent);
+  }
+
+  .fab-key.has-key {
+    border-color: #2F855A;
+    color: #2F855A;
+  }
+
+  /* API Key Modal */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 200;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 24px 80px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .modal-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .api-modal {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    width: 340px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+    transform: translateY(12px) scale(0.97);
+    transition: transform 0.25s ease;
+  }
+
+  .modal-overlay.open .api-modal {
+    transform: translateY(0) scale(1);
+  }
+
+  .api-modal h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
     display: flex;
     align-items: center;
+    gap: 6px;
+  }
+
+  .api-modal p {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+  }
+
+  .api-modal-row {
+    display: flex;
     gap: 8px;
-    user-select: none;
-  }
-
-  .api-section summary::before {
-    content: '🔑';
-    font-size: 1rem;
-  }
-
-  .api-section summary::after {
-    content: '▸';
-    margin-left: auto;
-    transition: transform 0.2s;
-    font-size: 0.8rem;
-  }
-
-  .api-section[open] summary::after {
-    transform: rotate(90deg);
-  }
-
-  .api-inner {
-    margin-top: 16px;
-    display: flex;
-    gap: 10px;
     align-items: center;
   }
 
-  .api-inner input {
+  .api-modal input {
     flex: 1;
-    padding: 10px 14px;
+    padding: 9px 12px;
     border: 1px solid var(--border);
     border-radius: 8px;
     font-family: var(--mono-font);
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     background: var(--bg);
     color: var(--text);
     outline: none;
     transition: border-color 0.2s;
+    min-width: 0;
   }
 
-  .api-inner input:focus {
+  .api-modal input:focus {
     border-color: var(--accent);
   }
 
-  .api-inner button {
-    padding: 10px 18px;
+  .api-modal .btn-save {
+    padding: 9px 14px;
     background: var(--accent);
     color: white;
     border: none;
     border-radius: 8px;
     font-family: var(--body-font);
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     cursor: pointer;
     transition: background 0.2s;
     white-space: nowrap;
   }
 
-  .api-inner button:hover {
-    background: var(--accent-hover);
-  }
+  .api-modal .btn-save:hover { background: var(--accent-hover); }
 
-  .api-status {
-    margin-top: 10px;
-    font-size: 0.8rem;
+  .api-modal-status {
+    margin-top: 8px;
+    font-size: 0.78rem;
     color: var(--text-secondary);
+    min-height: 16px;
   }
 
-  .api-status.ok { color: #2F855A; }
-  .api-status.err { color: var(--accent); }
+  .api-modal-status.ok { color: #2F855A; }
+  .api-modal-status.err { color: var(--accent); }
 
   /* Upload Zone */
   .upload-zone {
@@ -504,15 +547,21 @@
     <p>Carga tu vocabulario en Markdown y escucha la pronunciación</p>
   </header>
 
-  <!-- API Key -->
-  <details class="api-section" id="apiSection">
-    <summary>Configurar ElevenLabs API Key <small>(opcional, mejora la voz)</small></summary>
-    <div class="api-inner">
-      <input type="password" id="apiKeyInput" placeholder="sk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
-      <button onclick="saveApiKey()">Guardar</button>
+  <!-- Floating API Key Button -->
+  <button class="fab-key" id="fabKey" onclick="toggleApiModal()" title="Configurar ElevenLabs API Key">🔑</button>
+
+  <!-- API Key Modal -->
+  <div class="modal-overlay" id="apiModalOverlay" onclick="closeApiModalOutside(event)">
+    <div class="api-modal">
+      <h4>🔑 ElevenLabs API Key</h4>
+      <p>Opcional — mejora la calidad de voz. Si no la configuras se usa la voz del navegador.</p>
+      <div class="api-modal-row">
+        <input type="password" id="apiKeyInput" placeholder="sk_xxxxxxxxxxxx" />
+        <button class="btn-save" onclick="saveApiKey()">Guardar</button>
+      </div>
+      <div class="api-modal-status" id="apiStatus"></div>
     </div>
-    <div class="api-status" id="apiStatus"></div>
-  </details>
+  </div>
 
   <!-- Upload -->
   <div class="upload-zone" id="uploadZone">
@@ -543,8 +592,8 @@
 
 <script>
   // ─── State ───
-  let elevenLabsKey = localStorage.getItem('elevenLabsKey') || '';
-  let currentSpeed = 1;
+  // ─── State ───
+  let elevenLabsKey = '';
   let isPlaying = false;
 
   // ─── Toast ───
@@ -555,24 +604,49 @@
     setTimeout(() => t.classList.remove('show'), 2500);
   }
 
-  // ─── API Key ───
-  function saveApiKey() {
-    const key = document.getElementById('apiKeyInput').value.trim();
-    if (!key) return;
-    elevenLabsKey = key;
-    localStorage.setItem('elevenLabsKey', key);
-    const status = document.getElementById('apiStatus');
-    status.textContent = '✓ API Key guardada';
-    status.className = 'api-status ok';
-    toast('API Key de ElevenLabs guardada');
+  // ─── API Key helpers ───
+  function setApiStatus(msg, cls) {
+    const s = document.getElementById('apiStatus');
+    s.textContent = msg;
+    s.className = 'api-modal-status' + (cls ? ' ' + cls : '');
   }
 
-  // Load saved key
-  if (elevenLabsKey) {
-    document.getElementById('apiKeyInput').value = elevenLabsKey;
-    document.getElementById('apiStatus').textContent = '✓ API Key cargada';
-    document.getElementById('apiStatus').className = 'api-status ok';
+  function saveApiKey() {
+    const key = document.getElementById('apiKeyInput').value.trim();
+    if (!key) { setApiStatus('Introduce una key válida', 'err'); return; }
+    elevenLabsKey = key;
+    localStorage.setItem('elevenLabsKey', key);
+    setApiStatus('✓ API Key guardada', 'ok');
+    document.getElementById('fabKey').classList.add('has-key');
+    toast('API Key de ElevenLabs guardada');
+    setTimeout(() => document.getElementById('apiModalOverlay').classList.remove('open'), 800);
   }
+
+  // ─── API Key Modal ───
+  function toggleApiModal() {
+    document.getElementById('apiModalOverlay').classList.toggle('open');
+  }
+
+  function closeApiModalOutside(e) {
+    if (e.target === document.getElementById('apiModalOverlay')) {
+      document.getElementById('apiModalOverlay').classList.remove('open');
+    }
+  }
+
+  // ─── Load API key: URL param > localStorage ───
+  (function initApiKey() {
+    const params = new URLSearchParams(window.location.search);
+    const urlKey = params.get('key');
+    const stored = localStorage.getItem('elevenLabsKey') || '';
+    const key = urlKey || stored;
+    if (key) {
+      elevenLabsKey = key;
+      if (urlKey) localStorage.setItem('elevenLabsKey', urlKey);
+      document.getElementById('apiKeyInput').value = key;
+      setApiStatus('✓ API Key cargada', 'ok');
+      document.getElementById('fabKey').classList.add('has-key');
+    }
+  })();
 
   // ─── File Upload ───
   const uploadZone = document.getElementById('uploadZone');
@@ -677,7 +751,7 @@
       for (const word of section.words) {
         const delay = cardIndex * 0.04;
         html += `
-          <div class="word-card" style="animation-delay: ${delay}s" data-russian="${escapeAttr(word.russian)}">
+          <div class="word-card" style="animation-delay: ${delay}s" data-russian="${escapeAttr(word.russian)}" data-speed="1">
             <button class="play-btn" onclick="toggleSpeak('${escapeJs(word.russian)}', this)" title="Reproducir">
               <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
               <svg class="icon-stop" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>
@@ -687,9 +761,9 @@
               <div class="word-translation">${escapeHtml(word.translation)}</div>
             </div>
             <div class="speed-control">
-              <button class="speed-btn ${currentSpeed === 0.5 ? 'active' : ''}" onclick="setSpeed(0.5, this)">0.5×</button>
-              <button class="speed-btn ${currentSpeed === 0.7 ? 'active' : ''}" onclick="setSpeed(0.7, this)">0.7×</button>
-              <button class="speed-btn ${currentSpeed === 1 ? 'active' : ''}" onclick="setSpeed(1, this)">1×</button>
+              <button class="speed-btn" onclick="setSpeed(0.5, this)">0.5×</button>
+              <button class="speed-btn" onclick="setSpeed(0.7, this)">0.7×</button>
+              <button class="speed-btn active" onclick="setSpeed(1, this)">1×</button>
             </div>
           </div>
         `;
@@ -705,6 +779,8 @@
   }
 
   function resetView() {
+    playAllAborted = true;
+    stopCurrent();
     document.getElementById('content').classList.remove('visible');
     document.getElementById('content').innerHTML = '';
     uploadZone.style.display = '';
@@ -767,18 +843,21 @@
     btnEl.classList.add('playing');
     disableAllPlayBtns(btnEl);
 
+    const card = btnEl.closest('.word-card');
+    const speed = card ? parseFloat(card.dataset.speed || '1') : 1;
+
     try {
       if (elevenLabsKey) {
-        await speakElevenLabs(text);
+        await speakElevenLabs(text, speed);
       } else {
-        await speakWebSpeech(text);
+        await speakWebSpeech(text, speed);
       }
     } catch (err) {
       console.warn('ElevenLabs failed, falling back to Web Speech:', err);
       if (elevenLabsKey) {
         toast('ElevenLabs falló, usando voz del navegador');
       }
-      await speakWebSpeech(text);
+      await speakWebSpeech(text, speed);
     }
 
     // Clean up after playback finishes naturally
@@ -790,7 +869,7 @@
     }
   }
 
-  async function speakElevenLabs(text) {
+  async function speakElevenLabs(text, speed) {
     const voiceId = 'EXAVITQu4vr4xnSDxMaL';
     const url = `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
 
@@ -806,7 +885,7 @@
         voice_settings: {
           stability: 0.6,
           similarity_boost: 0.8,
-          speed: currentSpeed
+          speed: speed
         }
       })
     });
@@ -835,11 +914,11 @@
     });
   }
 
-  function speakWebSpeech(text) {
+  function speakWebSpeech(text, speed) {
     return new Promise((resolve) => {
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'ru-RU';
-      utterance.rate = currentSpeed;
+      utterance.rate = speed;
 
       const voices = speechSynthesis.getVoices();
       const ruVoice = voices.find(v => v.lang.startsWith('ru'));
@@ -858,11 +937,10 @@
     speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
   }
 
-  // ─── Speed Control ───
+  // ─── Speed Control (per card) ───
   function setSpeed(speed, btnEl) {
-    currentSpeed = speed;
-    // Update active state in parent card
     const card = btnEl.closest('.word-card');
+    card.dataset.speed = speed;
     card.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
     btnEl.classList.add('active');
   }
