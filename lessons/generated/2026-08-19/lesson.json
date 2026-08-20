@@ -1,0 +1,230 @@
+{
+ "version": 1,
+ "fecha": "2026-08-19",
+ "numero": 2,
+ "titulo": "Урок 2",
+ "semana": 1,
+ "gramatica": "Género de los sustantivos",
+ "duracion_min": 15,
+ "foco": "Seguimos con el género: la terminación manda casi siempre, salvo cuando el significado gana a la forma (мама, папа). Hoy la meta es mirar una palabra y decidir su género antes de traducirla.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Sin traducir mentalmente: solo sonido y significado.",
+   "tipo": "vocabulario",
+   "items": [
+    {
+     "ru": "да",
+     "ru_stress": "да",
+     "translit": "da",
+     "es": "sí"
+    },
+    {
+     "ru": "нет",
+     "ru_stress": "нет",
+     "translit": "net",
+     "es": "no"
+    },
+    {
+     "ru": "очень приятно",
+     "ru_stress": "о́чень прия́тно",
+     "translit": "ochen' priyatno",
+     "es": "mucho gusto"
+    },
+    {
+     "ru": "человек",
+     "ru_stress": "челове́к",
+     "translit": "chelovek",
+     "es": "persona"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "intro": "Lee el español, di el ruso en voz alta antes de tocar. Marca honestamente: de eso depende cuándo vuelve.",
+   "tipo": "repaso",
+   "items": [
+    {
+     "id": 1,
+     "es": "hola (informal)",
+     "ru": "привет",
+     "ru_stress": "приве́т",
+     "translit": "privet"
+    },
+    {
+     "id": 2,
+     "es": "hola / buenos días (formal)",
+     "ru": "здравствуйте",
+     "ru_stress": "здра́вствуйте",
+     "translit": "zdravstvuite"
+    },
+    {
+     "id": 3,
+     "es": "adiós",
+     "ru": "до свидания",
+     "ru_stress": "до свида́ния",
+     "translit": "do svidaniya"
+    },
+    {
+     "id": 4,
+     "es": "chao, hasta luego",
+     "ru": "пока",
+     "ru_stress": "пока́",
+     "translit": "poka"
+    },
+    {
+     "id": 5,
+     "es": "gracias",
+     "ru": "спасибо",
+     "ru_stress": "спаси́бо",
+     "translit": "spasibo"
+    },
+    {
+     "id": 6,
+     "es": "por favor / de nada",
+     "ru": "пожалуйста",
+     "ru_stress": "пожа́луйста",
+     "translit": "pozhaluista"
+    },
+    {
+     "id": 7,
+     "es": "disculpe",
+     "ru": "извините",
+     "ru_stress": "извини́те",
+     "translit": "izvinite"
+    },
+    {
+     "id": 8,
+     "es": "perdone",
+     "ru": "простите",
+     "ru_stress": "прости́те",
+     "translit": "prostite"
+    },
+    {
+     "id": 9,
+     "es": "buenos días",
+     "ru": "доброе утро",
+     "ru_stress": "до́брое у́тро",
+     "translit": "dobroye utro"
+    },
+    {
+     "id": 10,
+     "es": "buenas tardes",
+     "ru": "добрый день",
+     "ru_stress": "до́брый день",
+     "translit": "dobryi den'"
+    },
+    {
+     "id": 11,
+     "es": "buenas noches (al saludar)",
+     "ru": "добрый вечер",
+     "ru_stress": "до́брый ве́чер",
+     "translit": "dobryi vecher"
+    },
+    {
+     "id": 12,
+     "es": "buenas noches (al despedirse)",
+     "ru": "спокойной ночи",
+     "ru_stress": "споко́йной но́чи",
+     "translit": "spokoinoi nochi"
+    },
+    {
+     "id": 13,
+     "es": "sí",
+     "ru": "да",
+     "ru_stress": "да",
+     "translit": "da"
+    },
+    {
+     "id": 14,
+     "es": "no",
+     "ru": "нет",
+     "ru_stress": "нет",
+     "translit": "net"
+    },
+    {
+     "id": 15,
+     "es": "mucho gusto",
+     "ru": "очень приятно",
+     "ru_stress": "о́чень прия́тно",
+     "translit": "ochen' priyatno"
+    },
+    {
+     "id": 16,
+     "es": "persona",
+     "ru": "человек",
+     "ru_stress": "челове́к",
+     "translit": "chelovek"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Género de los sustantivos",
+   "explicacion": "Cada sustantivo ruso es masculino, femenino o neutro, y ese género rige los adjetivos, los pronombres y las declinaciones que vendrán después. La terminación del diccionario casi siempre lo delata — pero hay un puñado de palabras donde el significado manda sobre la forma.",
+   "reglas": [
+    {
+     "regla": "Consonante final → masculino",
+     "ejemplos": "дом · стол · хлеб"
+    },
+    {
+     "regla": "-а / -я → femenino",
+     "ejemplos": "книга · семья · сестра"
+    },
+    {
+     "regla": "-о / -е → neutro",
+     "ejemplos": "окно · время"
+    },
+    {
+     "regla": "Excepción: manda el significado, no la letra",
+     "ejemplos": "мама (fem.) · папа (masc.) — ambas en -а"
+    }
+   ],
+   "frases": [
+    {
+     "ru": "Это мой дом.",
+     "ru_stress": "Э́то мой дом.",
+     "es": "Esta es mi casa.",
+     "nota": "дом termina en consonante → masculino"
+    },
+    {
+     "ru": "Это твоя книга.",
+     "ru_stress": "Э́то твоя́ кни́га.",
+     "es": "Este es tu libro.",
+     "nota": "книга termina en -а → femenino"
+    },
+    {
+     "ru": "Это моё окно.",
+     "ru_stress": "Э́то моё окно́.",
+     "es": "Esta es mi ventana.",
+     "nota": "окно termina en -о → neutro"
+    },
+    {
+     "ru": "Мама дома, а папа на работе.",
+     "ru_stress": "Ма́ма до́ма, а па́па на рабо́те.",
+     "es": "Mamá está en casa y papá está en el trabajo.",
+     "nota": "мама y папа terminan igual en -а, pero uno es femenino y el otro masculino"
+    },
+    {
+     "ru": "Где моя сестра?",
+     "ru_stress": "Где моя́ сестра́?",
+     "es": "¿Dónde está mi hermana?",
+     "nota": "сестра termina en -а → femenino"
+    },
+    {
+     "ru": "Хлеб на столе.",
+     "ru_stress": "Хлеб на столе́.",
+     "es": "El pan está sobre la mesa.",
+     "nota": "хлеб y стол, ambos masculinos por terminar en consonante"
+    }
+   ]
+  }
+ ]
+}

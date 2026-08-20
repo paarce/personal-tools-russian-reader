@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repaso — Ruso</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .boxes{display:flex;gap:6px;justify-content:center;margin-bottom:24px;flex-wrap:wrap}
+  .box{background:var(--card);border:1px solid var(--border);border-radius:10px;
+    padding:10px 16px;text-align:center;min-width:74px}
+  .box b{display:block;font-family:var(--ru);font-size:1.5rem;color:var(--accent)}
+  .box span{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .flash{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+    padding:38px 24px;text-align:center;box-shadow:var(--sh);margin-bottom:16px;min-height:230px;
+    display:flex;flex-direction:column;justify-content:center;gap:12px}
+  .flash .q{font-size:1.35rem;font-weight:600}
+  .flash .a{font-family:var(--ru);font-size:2.4rem;color:var(--accent)}
+  .flash .tr{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+  .flash .tema{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+  .actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .prog{height:5px;background:var(--border);border-radius:99px;overflow:hidden;margin-bottom:20px}
+  .prog i{display:block;height:100%;background:var(--accent);transition:width .3s}
+  .tools{display:flex;gap:8px;justify-content:center;margin-top:30px;flex-wrap:wrap}
+  .api{max-width:520px;margin:0 auto 22px}
+  .api input{width:100%;padding:9px 12px;border:1px solid var(--border);border-radius:8px;
+    font-family:var(--mono);font-size:.8rem;margin-bottom:8px}
+  summary{cursor:pointer;font-size:.82rem;color:var(--muted);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-link" href="index.html">← Todas las clases</a>
+  <header>
+    <h1>Повторе́ние</h1>
+    <div class="meta">Repaso espaciado sobre todo tu vocabulario</div>
+  </header>
+
+  <nav class="tabs">
+    <a href="index.html">Clases</a>
+    <a href="review.html" class="active">Repaso</a>
+  </nav>
+
+  <details class="api block">
+    <summary>Ajustes — ElevenLabs, exportar / importar progreso</summary>
+    <div style="margin-top:14px">
+      <input type="password" id="key" placeholder="sk_… (opcional, mejora la voz)">
+      <div class="actions">
+        <button class="ghost" onclick="saveKey()">Guardar clave</button>
+        <button class="ghost" onclick="doExport()">Exportar progreso</button>
+        <button class="ghost" onclick="document.getElementById('imp').click()">Importar</button>
+        <button class="ghost" onclick="doReset()">Reiniciar</button>
+      </div>
+      <input type="file" id="imp" accept=".json" style="display:none">
+      <div class="tiny">El progreso se guarda en este navegador. Exporta para llevarlo al repo.</div>
+    </div>
+  </details>
+
+  <div class="boxes" id="boxes"></div>
+  <div class="prog"><i id="bar" style="width:0"></i></div>
+  <div id="zone"></div>
+
+  <footer>Ruso · repaso Leitner · voz ru-RU</footer>
+</div>
+
+<script src="assets/tts.js"></script>
+<script src="assets/md.js"></script>
+<script src="assets/progress.js"></script>
+<script>
+let SEED=null, cola=[], idx=0, revelada=false;
+
+function pintarCajas(){
+  const s=Progress.stats(SEED.words);
+  document.getElementById('boxes').innerHTML=
+    [1,2,3,4,5].map(i=>`<div class="box"><b>${s.boxes[i]}</b><span>caja ${i}</span></div>`).join('')
+    + `<div class="box"><b>${s.pendientes}</b><span>hoy</span></div>`;
+}
+
+function pintar(){
+  const z=document.getElementById('zone');
+  document.getElementById('bar').style.width=
+    cola.length?`${Math.round(idx/cola.length*100)}%`:'0';
+
+  if(idx>=cola.length){
+    z.innerHTML=`<div class="flash"><div class="q">${cola.length?'¡Repaso terminado!':'Nada que repasar hoy'}</div>
+      <div class="tiny">${cola.length?cola.length+' palabras revisadas.':'Vuelve mañana — o repasa todo igualmente.'}</div></div>
+      <div class="actions"><button class="ghost" id="todo">Repasar todo el vocabulario</button></div>`;
+    document.getElementById('todo').onclick=()=>{
+      cola=Progress.merge(SEED.words).sort(()=>Math.random()-0.5);idx=0;pintar();};
+    pintarCajas();
+    return;
+  }
+
+  const w=cola[idx];
+  z.innerHTML='';
+  const f=document.createElement('div'); f.className='flash';
+  f.innerHTML=`<div class="tema">${w.tema||''} · caja ${w.box||1}</div>
+    <div class="q">${w.es}</div>`;
+  if(revelada){
+    f.innerHTML+=`<div class="a">${w.ru_stress||w.ru}</div>
+      <div class="tr">${w.translit||''}</div>`;
+  }
+  z.appendChild(f);
+
+  const acts=document.createElement('div'); acts.className='actions';
+  if(!revelada){
+    const b=document.createElement('button'); b.className='primary'; b.textContent='Ver respuesta';
+    b.onclick=()=>{revelada=true;pintar();TTS.speak(stripStress(w.ru));};
+    acts.appendChild(b);
+  }else{
+    const p=playBtn(stripStress(w.ru));
+    const si=document.createElement('button'); si.className='primary'; si.textContent='✓ La sabía';
+    si.onclick=()=>{Progress.mark(w,true);idx++;revelada=false;pintar();};
+    const no=document.createElement('button'); no.className='ghost'; no.textContent='✗ No me salió';
+    no.onclick=()=>{Progress.mark(w,false);idx++;revelada=false;pintar();};
+    acts.append(p,si,no);
+  }
+  z.appendChild(acts);
+}
+
+function saveKey(){const v=document.getElementById('key').value;
+  if(v.trim()){TTS.setKey(v);toast('Clave guardada');}}
+function doExport(){
+  const blob=new Blob([Progress.exportJSON(SEED)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=`vocabulary-${Progress.today()}.json`;
+  a.click(); URL.revokeObjectURL(a.href);
+}
+function doReset(){
+  if(confirm('¿Borrar todo el progreso guardado en este navegador?')){
+    Progress.reset();location.reload();}
+}
+document.getElementById('imp').onchange=e=>{
+  const f=e.target.files[0]; if(!f) return;
+  f.text().then(t=>{Progress.importJSON(t);toast('Progreso importado');location.reload();});
+};
+
+fetch('data/vocabulary.json').then(r=>r.json()).then(d=>{
+  SEED=d;
+  pintarCajas();
+  cola=Progress.due(d.words).sort(()=>Math.random()-0.5);
+  pintar();
+}).catch(e=>{
+  document.getElementById('zone').innerHTML=
+    '<div class="empty">No se pudo cargar data/vocabulary.json — '+e.message+'</div>';
+});
+</script>
+</body>
+</html>

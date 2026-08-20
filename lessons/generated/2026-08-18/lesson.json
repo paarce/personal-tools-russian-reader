@@ -1,0 +1,250 @@
+{
+ "version": 1,
+ "fecha": "2026-08-18",
+ "numero": 1,
+ "titulo": "Урок 1",
+ "semana": 1,
+ "gramatica": "Género de los sustantivos",
+ "duracion_min": 15,
+ "foco": "Hoy identificamos el género de cada sustantivo por su terminación y practicamos la concordancia con мой / моя / моё — la base de casi toda la gramática rusa posterior.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Sin traducir mentalmente: solo sonido y significado.",
+   "tipo": "vocabulario",
+   "items": [
+    {
+     "ru": "привет",
+     "ru_stress": "приве́т",
+     "translit": "privet",
+     "es": "hola (informal)"
+    },
+    {
+     "ru": "здравствуйте",
+     "ru_stress": "здра́вствуйте",
+     "translit": "zdravstvuite",
+     "es": "hola / buenos días (formal)"
+    },
+    {
+     "ru": "до свидания",
+     "ru_stress": "до свида́ния",
+     "translit": "do svidaniya",
+     "es": "adiós"
+    },
+    {
+     "ru": "пока",
+     "ru_stress": "пока́",
+     "translit": "poka",
+     "es": "chao, hasta luego"
+    },
+    {
+     "ru": "спасибо",
+     "ru_stress": "спаси́бо",
+     "translit": "spasibo",
+     "es": "gracias"
+    },
+    {
+     "ru": "пожалуйста",
+     "ru_stress": "пожа́луйста",
+     "translit": "pozhaluista",
+     "es": "por favor / de nada"
+    },
+    {
+     "ru": "извините",
+     "ru_stress": "извини́те",
+     "translit": "izvinite",
+     "es": "disculpe"
+    },
+    {
+     "ru": "простите",
+     "ru_stress": "прости́те",
+     "translit": "prostite",
+     "es": "perdone"
+    },
+    {
+     "ru": "доброе утро",
+     "ru_stress": "до́брое у́тро",
+     "translit": "dobroye utro",
+     "es": "buenos días"
+    },
+    {
+     "ru": "добрый день",
+     "ru_stress": "до́брый день",
+     "translit": "dobryi den'",
+     "es": "buenas tardes"
+    },
+    {
+     "ru": "добрый вечер",
+     "ru_stress": "до́брый ве́чер",
+     "translit": "dobryi vecher",
+     "es": "buenas noches (al saludar)"
+    },
+    {
+     "ru": "спокойной ночи",
+     "ru_stress": "споко́йной но́чи",
+     "translit": "spokoinoi nochi",
+     "es": "buenas noches (al despedirse)"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "intro": "Lee el español, di el ruso en voz alta antes de tocar. Marca honestamente: de eso depende cuándo vuelve.",
+   "tipo": "repaso",
+   "items": [
+    {
+     "id": 1,
+     "es": "hola (informal)",
+     "ru": "привет",
+     "ru_stress": "приве́т",
+     "translit": "privet"
+    },
+    {
+     "id": 2,
+     "es": "hola / buenos días (formal)",
+     "ru": "здравствуйте",
+     "ru_stress": "здра́вствуйте",
+     "translit": "zdravstvuite"
+    },
+    {
+     "id": 3,
+     "es": "adiós",
+     "ru": "до свидания",
+     "ru_stress": "до свида́ния",
+     "translit": "do svidaniya"
+    },
+    {
+     "id": 4,
+     "es": "chao, hasta luego",
+     "ru": "пока",
+     "ru_stress": "пока́",
+     "translit": "poka"
+    },
+    {
+     "id": 5,
+     "es": "gracias",
+     "ru": "спасибо",
+     "ru_stress": "спаси́бо",
+     "translit": "spasibo"
+    },
+    {
+     "id": 6,
+     "es": "por favor / de nada",
+     "ru": "пожалуйста",
+     "ru_stress": "пожа́луйста",
+     "translit": "pozhaluista"
+    },
+    {
+     "id": 7,
+     "es": "disculpe",
+     "ru": "извините",
+     "ru_stress": "извини́те",
+     "translit": "izvinite"
+    },
+    {
+     "id": 8,
+     "es": "perdone",
+     "ru": "простите",
+     "ru_stress": "прости́те",
+     "translit": "prostite"
+    },
+    {
+     "id": 9,
+     "es": "buenos días",
+     "ru": "доброе утро",
+     "ru_stress": "до́брое у́тро",
+     "translit": "dobroye utro"
+    },
+    {
+     "id": 10,
+     "es": "buenas tardes",
+     "ru": "добрый день",
+     "ru_stress": "до́брый день",
+     "translit": "dobryi den'"
+    },
+    {
+     "id": 11,
+     "es": "buenas noches (al saludar)",
+     "ru": "добрый вечер",
+     "ru_stress": "до́брый ве́чер",
+     "translit": "dobryi vecher"
+    },
+    {
+     "id": 12,
+     "es": "buenas noches (al despedirse)",
+     "ru": "спокойной ночи",
+     "ru_stress": "споко́йной но́чи",
+     "translit": "spokoinoi nochi"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Género de los sustantivos",
+   "explicacion": "En ruso todo sustantivo tiene un género fijo: masculino, femenino o neutro. La terminación casi siempre lo delata, y el posesivo мой / моя / моё tiene que concordar con ese género, no con quién habla. Las palabras terminadas en -ь son la excepción: no hay regla visual, hay que memorizarlas una por una.",
+   "reglas": [
+    {
+     "regla": "Consonante → masculino",
+     "ejemplos": "дом · брат · день"
+    },
+    {
+     "regla": "-а / -я → femenino",
+     "ejemplos": "мама · семья · сестра"
+    },
+    {
+     "regla": "-о / -е → neutro",
+     "ejemplos": "окно · молоко · время"
+    },
+    {
+     "regla": "-ь → depende, se memoriza",
+     "ejemplos": "день (m) · дверь (f)"
+    }
+   ],
+   "frases": [
+    {
+     "ru": "Это мой дом.",
+     "ru_stress": "Э́то мой дом.",
+     "es": "Esta es mi casa.",
+     "nota": "дом termina en consonante → masculino, por eso «мой»."
+    },
+    {
+     "ru": "Это моя мама.",
+     "ru_stress": "Э́то моя́ ма́ма.",
+     "es": "Esta es mi mamá.",
+     "nota": "мама termina en -а → femenino, por eso «моя»."
+    },
+    {
+     "ru": "Это моя семья.",
+     "ru_stress": "Э́то моя́ семья́.",
+     "es": "Esta es mi familia.",
+     "nota": "семья termina en -я, también femenino, igual que -а."
+    },
+    {
+     "ru": "Это моё окно.",
+     "ru_stress": "Э́то моё окно́.",
+     "es": "Esta es mi ventana.",
+     "nota": "окно termina en -о → neutro, por eso «моё»."
+    },
+    {
+     "ru": "Это мой день.",
+     "ru_stress": "Э́то мой день.",
+     "es": "Este es mi día.",
+     "nota": "день termina en -ь pero es masculino: no hay regla, se memoriza."
+    },
+    {
+     "ru": "Это моя дверь.",
+     "ru_stress": "Э́то моя́ дверь.",
+     "es": "Esta es mi puerta.",
+     "nota": "дверь también termina en -ь, pero aquí es femenino."
+    }
+   ]
+  }
+ ]
+}

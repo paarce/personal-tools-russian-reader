@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Урок — Ruso</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .toolbar{display:flex;gap:8px;align-items:center;justify-content:center;
+    margin-bottom:20px;flex-wrap:wrap}
+  .speed{display:flex;gap:4px}
+  .speed button{padding:5px 12px;border-radius:8px;border:1px solid var(--border);
+    background:var(--card);font-size:.75rem;font-family:var(--mono);cursor:pointer;color:var(--muted)}
+  .speed button.active{background:var(--accent);border-color:var(--accent);color:#fff}
+  .done-block{text-align:center}
+  #out{display:none;font-family:var(--mono);font-size:.78rem;background:var(--bg);
+    border:1px solid var(--border);border-radius:8px;padding:12px;margin-top:14px;
+    word-break:break-all}
+  #out.show{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-link" href="index.html">← Todas las clases</a>
+  <header id="head"></header>
+
+  <div class="toolbar">
+    <button class="ghost" id="playAll">▶ Escuchar todo</button>
+    <div class="speed">
+      <button data-r="0.6">0.6×</button>
+      <button data-r="0.85" class="active">0.85×</button>
+      <button data-r="1">1×</button>
+    </div>
+  </div>
+
+  <div id="content"></div>
+  <footer id="foot"></footer>
+</div>
+
+<script src="assets/tts.js"></script>
+<script src="assets/md.js"></script>
+<script src="assets/progress.js"></script>
+<script>
+const MESES=['enero','febrero','marzo','abril','mayo','junio','julio',
+             'agosto','septiembre','octubre','noviembre','diciembre'];
+function fecha(iso){const[a,m,d]=iso.split('-');return `${+d} de ${MESES[+m-1]} de ${a}`;}
+const el=(t,c,h)=>{const n=document.createElement(t);if(c)n.className=c;
+  if(h!==undefined)n.innerHTML=h;return n;};
+
+/* ── fila de palabra: play + ruso acentuado + translit + español ── */
+function wordRow(w,cls='row'){
+  const r=el('div',cls);
+  r.appendChild(playBtn(stripStress(w.ru||w.ru_stress)));
+  const t=el('div','rtext');
+  t.appendChild(el('div','rru',w.ru_stress||w.ru));
+  if(w.translit) t.appendChild(el('div','rtr',w.translit));
+  if(w.es) t.appendChild(el('div','res',w.es));
+  if(w.nota) t.appendChild(el('div','note',w.nota));
+  r.appendChild(t);
+  return r;
+}
+
+/* ── lecciones generadas (lesson.json) ── */
+function renderGenerated(d){
+  document.title=`${d.titulo} — Ruso`;
+  const h=document.getElementById('head');
+  h.innerHTML=`<h1>Уро́к <span>${d.numero}</span></h1>
+    <div class="meta">${fecha(d.fecha)}${d.duracion_min?' · '+d.duracion_min+' minutos':''}</div>
+    ${d.gramatica?`<div class="pill">${d.semana?'Semana '+d.semana+' · ':''}${d.gramatica}</div>`:''}`;
+
+  const c=document.getElementById('content');
+  if(d.foco){
+    const f=el('div','focus');
+    f.appendChild(el('h3',null,'Foco de hoy'));
+    f.appendChild(el('p',null,d.foco));
+    c.appendChild(f);
+  }
+
+  for(const b of d.bloques){
+    const blk=el('div','block');
+    blk.innerHTML=`<div class="bhead"><span class="bnum">${b.n}</span>
+      <h2>${b.titulo}</h2><span class="btime">${b.minutos} min</span></div>`;
+    if(b.intro) blk.appendChild(el('div','bsub',b.intro));
+
+    if(b.tipo==='vocabulario') b.items.forEach(w=>blk.appendChild(wordRow(w)));
+
+    if(b.tipo==='repaso') b.items.forEach(w=>{
+      const card=el('div','card');
+      card.dataset.id=w.id;
+      card.appendChild(el('div','front',w.es));
+      card.appendChild(el('div','hint','toca para ver la respuesta'));
+      const back=el('div','back');
+      back.appendChild(playBtn(stripStress(w.ru)));
+      const t=el('div','rtext');
+      t.appendChild(el('div','rru',w.ru_stress||w.ru));
+      if(w.translit) t.appendChild(el('div','rtr',w.translit));
+      back.appendChild(t);
+      card.appendChild(back);
+      const mk=el('div','mark');
+      const yes=el('button','yes','✓ La sabía'), no=el('button','no','✗ No me salió');
+      yes.onclick=e=>{e.stopPropagation();Progress.mark(w,true);
+        card.dataset.ok='1';yes.classList.add('sel');no.classList.remove('sel');};
+      no.onclick=e=>{e.stopPropagation();Progress.mark(w,false);
+        card.dataset.ok='0';no.classList.add('sel');yes.classList.remove('sel');};
+      mk.append(yes,no); card.appendChild(mk);
+      card.onclick=()=>card.classList.toggle('open');
+      blk.appendChild(card);
+    });
+
+    if(b.tipo==='gramatica'){
+      if(b.tema) blk.appendChild(el('div','gtitle',b.tema));
+      if(b.explicacion) blk.appendChild(el('div','gintro',b.explicacion));
+      (b.reglas||[]).forEach(r=>blk.appendChild(
+        el('div','rule',`<b>${r.regla}</b><span>${r.ejemplos}</span>`)));
+      if((b.frases||[]).length) blk.appendChild(el('div',null,'<div style="height:14px"></div>'));
+      (b.frases||[]).forEach(f=>blk.appendChild(wordRow(f,'sent')));
+    }
+    document.getElementById('content').appendChild(blk);
+  }
+
+  /* cierre: el progreso ya se guardó al marcar, aquí solo se resume */
+  const done=el('div','block done-block');
+  done.innerHTML='<div class="tiny" id="doneMsg">Marca las tarjetas de repaso y guarda la sesión.</div>';
+  const btn=el('button','primary','Terminar clase');
+  const out=el('div',null,''); out.id='out';
+  btn.onclick=()=>{
+    const cards=[...document.querySelectorAll('.card')];
+    const fallos=cards.filter(c=>c.dataset.ok==='0').map(c=>c.dataset.id);
+    const marcadas=cards.filter(c=>c.dataset.ok!==undefined).length;
+    out.textContent=`RESULTADO ${d.fecha} x ${fallos.length?fallos.join(','):'-'}`;
+    out.classList.add('show');
+    if(navigator.clipboard) navigator.clipboard.writeText(out.textContent).catch(()=>{});
+    document.getElementById('doneMsg').textContent=
+      `${marcadas}/${cards.length} marcadas · progreso guardado en este navegador.`
+      + (fallos.length?` ${fallos.length} vuelven a la caja 1.`:' ¡Sin fallos!');
+    toast('Sesión guardada');
+  };
+  done.append(btn,out);
+  document.getElementById('content').appendChild(done);
+  document.getElementById('foot').textContent='Ruso · clase generada · voz ru-RU';
+}
+
+/* ── clases con profesor (.md) ── */
+function renderMd(text,info){
+  document.title=`${info.titulo} — Ruso`;
+  document.getElementById('head').innerHTML=
+    `<h1>${info.titulo}</h1><div class="meta">${fecha(info.fecha)} · clase con profesor</div>`;
+  const secs=parseLessonMd(text);
+  const c=document.getElementById('content');
+  secs.forEach((s,i)=>{
+    const blk=el('div','block');
+    blk.innerHTML=`<div class="bhead"><span class="bnum">${i+1}</span>
+      <h2>${s.titulo||'Vocabulario'}</h2>
+      <span class="btime">${s.items.length}</span></div>`;
+    s.items.forEach(w=>blk.appendChild(wordRow(w)));
+    c.appendChild(blk);
+  });
+  if(!secs.length) c.innerHTML='<div class="empty">Este archivo no tiene líneas «ruso — español».</div>';
+  document.getElementById('foot').textContent='Ruso · clase con profesor · voz ru-RU';
+}
+
+/* ── escuchar todo ── */
+let playing=false;
+document.getElementById('playAll').onclick=async function(){
+  if(playing){playing=false;TTS.stop();this.textContent='▶ Escuchar todo';return;}
+  playing=true; this.textContent='■ Parar';
+  const btns=[...document.querySelectorAll('.play')];
+  for(const b of btns){
+    if(!playing) break;
+    b.scrollIntoView({behavior:'smooth',block:'center'});
+    b.click();
+    await new Promise(r=>{const i=setInterval(()=>{
+      if(!b.classList.contains('on')||!playing){clearInterval(i);r();}},120);});
+    await new Promise(r=>setTimeout(r,220));
+  }
+  playing=false; this.textContent='▶ Escuchar todo';
+};
+document.querySelectorAll('.speed button').forEach(b=>b.onclick=()=>{
+  TTS.setRate(parseFloat(b.dataset.r));
+  document.querySelectorAll('.speed button').forEach(x=>x.classList.toggle('active',x===b));
+});
+
+/* ── carga ── */
+const id=new URLSearchParams(location.search).get('id');
+fetch('data/manifest.json').then(r=>r.json()).then(man=>{
+  const info=man.lecciones.find(l=>l.id===id);
+  if(!info){document.getElementById('content').innerHTML=
+    '<div class="empty">Clase no encontrada.</div>';return;}
+  if(info.formato==='lesson-json')
+    return fetch(info.path).then(r=>r.json()).then(renderGenerated);
+  return fetch(info.path).then(r=>r.text()).then(t=>renderMd(t,info));
+}).catch(e=>{
+  document.getElementById('content').innerHTML=
+    '<div class="empty">Error cargando la clase — '+e.message+'</div>';
+});
+</script>
+</body>
+</html>

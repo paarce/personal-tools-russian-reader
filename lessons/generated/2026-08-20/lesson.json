@@ -1,0 +1,252 @@
+{
+ "version": 1,
+ "fecha": "2026-08-20",
+ "numero": 3,
+ "titulo": "Урок 3",
+ "semana": 1,
+ "gramatica": "Género de los sustantivos",
+ "duracion_min": 15,
+ "foco": "Seguimos con el género, ahora aplicado al vocabulario de familia y personas que entra hoy. Antes de traducir cualquier palabra nueva, fíjate en cómo termina: eso ya te dice si es masculina, femenina o una excepción que toca memorizar.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Sin traducir mentalmente: solo sonido y significado.",
+   "tipo": "vocabulario",
+   "items": [
+    {
+     "ru": "мужчина",
+     "ru_stress": "мужчи́на",
+     "translit": "muzhchina",
+     "es": "hombre"
+    },
+    {
+     "ru": "женщина",
+     "ru_stress": "же́нщина",
+     "translit": "zhenschina",
+     "es": "mujer"
+    },
+    {
+     "ru": "мама",
+     "ru_stress": "ма́ма",
+     "translit": "mama",
+     "es": "mamá"
+    },
+    {
+     "ru": "папа",
+     "ru_stress": "па́па",
+     "translit": "papa",
+     "es": "papá"
+    },
+    {
+     "ru": "брат",
+     "ru_stress": "брат",
+     "translit": "brat",
+     "es": "hermano"
+    },
+    {
+     "ru": "сестра",
+     "ru_stress": "сестра́",
+     "translit": "sestra",
+     "es": "hermana"
+    },
+    {
+     "ru": "сын",
+     "ru_stress": "сын",
+     "translit": "syn",
+     "es": "hijo"
+    },
+    {
+     "ru": "дочь",
+     "ru_stress": "дочь",
+     "translit": "doch'",
+     "es": "hija"
+    },
+    {
+     "ru": "друг",
+     "ru_stress": "друг",
+     "translit": "drug",
+     "es": "amigo"
+    },
+    {
+     "ru": "подруга",
+     "ru_stress": "подру́га",
+     "translit": "podruga",
+     "es": "amiga"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "intro": "Lee el español, di el ruso en voz alta antes de tocar. Marca honestamente: de eso depende cuándo vuelve.",
+   "tipo": "repaso",
+   "items": [
+    {
+     "id": 13,
+     "es": "sí",
+     "ru": "да",
+     "ru_stress": "да",
+     "translit": "da"
+    },
+    {
+     "id": 14,
+     "es": "no",
+     "ru": "нет",
+     "ru_stress": "нет",
+     "translit": "net"
+    },
+    {
+     "id": 15,
+     "es": "mucho gusto",
+     "ru": "очень приятно",
+     "ru_stress": "о́чень прия́тно",
+     "translit": "ochen' priyatno"
+    },
+    {
+     "id": 16,
+     "es": "persona",
+     "ru": "человек",
+     "ru_stress": "челове́к",
+     "translit": "chelovek"
+    },
+    {
+     "id": 17,
+     "es": "hombre",
+     "ru": "мужчина",
+     "ru_stress": "мужчи́на",
+     "translit": "muzhchina"
+    },
+    {
+     "id": 18,
+     "es": "mujer",
+     "ru": "женщина",
+     "ru_stress": "же́нщина",
+     "translit": "zhenschina"
+    },
+    {
+     "id": 19,
+     "es": "mamá",
+     "ru": "мама",
+     "ru_stress": "ма́ма",
+     "translit": "mama"
+    },
+    {
+     "id": 20,
+     "es": "papá",
+     "ru": "папа",
+     "ru_stress": "па́па",
+     "translit": "papa"
+    },
+    {
+     "id": 21,
+     "es": "hermano",
+     "ru": "брат",
+     "ru_stress": "брат",
+     "translit": "brat"
+    },
+    {
+     "id": 22,
+     "es": "hermana",
+     "ru": "сестра",
+     "ru_stress": "сестра́",
+     "translit": "sestra"
+    },
+    {
+     "id": 23,
+     "es": "hijo",
+     "ru": "сын",
+     "ru_stress": "сын",
+     "translit": "syn"
+    },
+    {
+     "id": 24,
+     "es": "hija",
+     "ru": "дочь",
+     "ru_stress": "дочь",
+     "translit": "doch'"
+    },
+    {
+     "id": 25,
+     "es": "amigo",
+     "ru": "друг",
+     "ru_stress": "друг",
+     "translit": "drug"
+    },
+    {
+     "id": 26,
+     "es": "amiga",
+     "ru": "подруга",
+     "ru_stress": "подру́га",
+     "translit": "podruga"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Género de los sustantivos",
+   "explicacion": "Recuerda: la terminación manda, salvo cuando el sexo natural de la persona la contradice. Hoy aparecen dos casos así — мужчина y папа terminan en -а pero son masculinos porque nombran a un hombre. Y дочь termina en -ь pero es femenina: esas hay que memorizarlas una a una.",
+   "reglas": [
+    {
+     "regla": "Consonante final → masculino",
+     "ejemplos": "брат · друг · сын"
+    },
+    {
+     "regla": "-а / -я → femenino",
+     "ejemplos": "мама · сестра́ · подру́га"
+    },
+    {
+     "regla": "-ь → depende, hay que memorizarlo",
+     "ejemplos": "дочь (f) · день (m)"
+    },
+    {
+     "regla": "Excepción: manda el sexo natural",
+     "ejemplos": "мужчи́на (m) · па́па (m)"
+    }
+   ],
+   "frases": [
+    {
+     "ru": "Это мама.",
+     "ru_stress": "Э́то ма́ма.",
+     "es": "Esta es mamá.",
+     "nota": "мама termina en -а: femenino regular"
+    },
+    {
+     "ru": "Это папа.",
+     "ru_stress": "Э́то па́па.",
+     "es": "Este es papá.",
+     "nota": "excepción: -а pero masculino, porque es un hombre"
+    },
+    {
+     "ru": "Это брат.",
+     "ru_stress": "Э́то брат.",
+     "es": "Este es mi hermano.",
+     "nota": "consonante final: masculino regular"
+    },
+    {
+     "ru": "Это сестра.",
+     "ru_stress": "Э́то сестра́.",
+     "es": "Esta es mi hermana.",
+     "nota": "-а final: femenino regular"
+    },
+    {
+     "ru": "Здесь друг, а там подруга.",
+     "ru_stress": "Здесь друг, а там подру́га.",
+     "es": "Aquí está el amigo, y allí la amiga.",
+     "nota": "друг (consonante, m) frente a подруга (-а, f)"
+    },
+    {
+     "ru": "Дочь и сын здесь.",
+     "ru_stress": "Дочь и сын здесь.",
+     "es": "La hija y el hijo están aquí.",
+     "nota": "дочь: excepción en -ь, es femenina"
+    }
+   ]
+  }
+ ]
+}
