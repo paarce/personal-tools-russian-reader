@@ -1,7 +1,223 @@
 {
  "version": 1,
- "generado": "2026-08-20",
+ "generado": "2026-08-21",
  "lecciones": [
+  {
+   "id": "clase_adjetivos_adverbios",
+   "titulo": "Adjetivos y adverbios",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_adjetivos_adverbios.md",
+   "entradas": 62,
+   "temas": [
+    "Adjetivos para personas",
+    "Adjetivos para objetos y lugares",
+    "Terminaciones de adjetivos",
+    "Frases con adjetivos"
+   ]
+  },
+  {
+   "id": "clase_conjugaciones",
+   "titulo": "Conjugaciones",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_conjugaciones.md",
+   "entradas": 45,
+   "temas": [
+    "Verbos",
+    "Verbos",
+    "Conjugación: работать (trabajar)",
+    "Conjugación: говорить (hablar)"
+   ]
+  },
+  {
+   "id": "clase_cultura_rusa",
+   "titulo": "Cultura rusa",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_cultura_rusa.md",
+   "entradas": 39,
+   "temas": [
+    "Fiestas rusas",
+    "Año Nuevo",
+    "Comida de Año Nuevo",
+    "Масленица"
+   ]
+  },
+  {
+   "id": "clase_dialogos",
+   "titulo": "Diálogos",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_dialogos.md",
+   "entradas": 59,
+   "temas": [
+    "Texto: Alina",
+    "Texto: Andréi",
+    "Diálogo 1: Rik",
+    "Diálogo 2: Lida"
+   ]
+  },
+  {
+   "id": "clase_dias_meses_numeros",
+   "titulo": "Días, meses y números",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_dias_meses_numeros.md",
+   "entradas": 34,
+   "temas": [
+    "Días de la semana",
+    "Meses del año",
+    "Números ordinales"
+   ]
+  },
+  {
+   "id": "clase_familia",
+   "titulo": "La familia",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_familia.md",
+   "entradas": 40,
+   "temas": [
+    "Familia",
+    "Familia extendida",
+    "Relaciones de pareja",
+    "Palabras clave"
+   ]
+  },
+  {
+   "id": "clase_familia_personas",
+   "titulo": "Familia y personas",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_familia_personas.md",
+   "entradas": 47,
+   "temas": [
+    "Familia",
+    "Amigos y personas",
+    "Pertenencias y objetos personales",
+    "Frases con posesivos"
+   ]
+  },
+  {
+   "id": "clase_lectura_biografias",
+   "titulo": "Lectura: biografías",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_lectura_biografias.md",
+   "entradas": 108,
+   "temas": [
+    "Mascotas",
+    "Colores y adjetivos de mascotas",
+    "Describir el carácter",
+    "Frases de carácter"
+   ]
+  },
+  {
+   "id": "clase_numeros_1",
+   "titulo": "Números (1)",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_numeros_1.md",
+   "entradas": 32,
+   "temas": [
+    "Números del 0 al 10",
+    "Números del 11 al 19",
+    "Decenas",
+    "Números en contexto"
+   ]
+  },
+  {
+   "id": "clase_pronombres",
+   "titulo": "Pronombres",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_pronombres.md",
+   "entradas": 7,
+   "temas": [
+    "Conversación práctica"
+   ]
+  },
+  {
+   "id": "clase_verbos_reflexivos",
+   "titulo": "Verbos reflexivos",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_verbos_reflexivos.md",
+   "entradas": 29,
+   "temas": [
+    "Verbos reflexivos",
+    "Conjugación: просыпаться (despertarse)",
+    "Conjugación: умываться (lavarse la cara)",
+    "Frases con verbos reflexivos"
+   ]
+  },
+  {
+   "id": "clase_vocabulario_completo",
+   "titulo": "Vocabulario completo",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/clase_vocabulario_completo.md",
+   "entradas": 116,
+   "temas": [
+    "Países y nacionalidades",
+    "De dónde eres",
+    "Nacionalidades",
+    "Dónde vives"
+   ]
+  },
+  {
+   "id": "dialogo_ruso_metro",
+   "titulo": "Diálogo: el metro",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/dialogo_ruso_metro.md",
+   "entradas": 6,
+   "temas": [
+    "Diálogo: Encontrarse en el metro"
+   ]
+  },
+  {
+   "id": "ejemplo-vocabulario",
+   "titulo": "Ejemplo de vocabulario",
+   "origen": "profesor",
+   "fecha": "2026-08-21",
+   "formato": "md",
+   "path": "lessons/teacher/ejemplo-vocabulario.md",
+   "entradas": 21,
+   "temas": [
+    "Saludos básicos",
+    "Frases esenciales",
+    "En el restaurante"
+   ]
+  },
+  {
+   "id": "2026-08-21",
+   "titulo": "Урок 4",
+   "origen": "ia",
+   "fecha": "2026-08-21",
+   "formato": "lesson-json",
+   "path": "lessons/generated/2026-08-21/lesson.json",
+   "semana": 1,
+   "duracion_min": 15,
+   "temas": [
+    "Género de los sustantivos"
+   ],
+   "entradas": 14
+  },
   {
    "id": "2026-08-20",
    "titulo": "Урок 3",
@@ -43,208 +259,6 @@
     "Género de los sustantivos"
    ],
    "entradas": 24
-  },
-  {
-   "id": "clase_adjetivos_adverbios",
-   "titulo": "Adjetivos y adverbios",
-   "origen": "profesor",
-   "fecha": "2026-05-10",
-   "formato": "md",
-   "path": "lessons/teacher/clase_adjetivos_adverbios.md",
-   "entradas": 62,
-   "temas": [
-    "Adjetivos para personas",
-    "Adjetivos para objetos y lugares",
-    "Terminaciones de adjetivos",
-    "Frases con adjetivos"
-   ]
-  },
-  {
-   "id": "clase_cultura_rusa",
-   "titulo": "Cultura rusa",
-   "origen": "profesor",
-   "fecha": "2026-05-10",
-   "formato": "md",
-   "path": "lessons/teacher/clase_cultura_rusa.md",
-   "entradas": 39,
-   "temas": [
-    "Fiestas rusas",
-    "Año Nuevo",
-    "Comida de Año Nuevo",
-    "Масленица"
-   ]
-  },
-  {
-   "id": "clase_dialogos",
-   "titulo": "Diálogos",
-   "origen": "profesor",
-   "fecha": "2026-05-10",
-   "formato": "md",
-   "path": "lessons/teacher/clase_dialogos.md",
-   "entradas": 59,
-   "temas": [
-    "Texto: Alina",
-    "Texto: Andréi",
-    "Diálogo 1: Rik",
-    "Diálogo 2: Lida"
-   ]
-  },
-  {
-   "id": "clase_familia",
-   "titulo": "La familia",
-   "origen": "profesor",
-   "fecha": "2026-05-10",
-   "formato": "md",
-   "path": "lessons/teacher/clase_familia.md",
-   "entradas": 40,
-   "temas": [
-    "Familia",
-    "Familia extendida",
-    "Relaciones de pareja",
-    "Palabras clave"
-   ]
-  },
-  {
-   "id": "clase_lectura_biografias",
-   "titulo": "Lectura: biografías",
-   "origen": "profesor",
-   "fecha": "2026-05-10",
-   "formato": "md",
-   "path": "lessons/teacher/clase_lectura_biografias.md",
-   "entradas": 108,
-   "temas": [
-    "Mascotas",
-    "Colores y adjetivos de mascotas",
-    "Describir el carácter",
-    "Frases de carácter"
-   ]
-  },
-  {
-   "id": "clase_verbos_reflexivos",
-   "titulo": "Verbos reflexivos",
-   "origen": "profesor",
-   "fecha": "2026-05-10",
-   "formato": "md",
-   "path": "lessons/teacher/clase_verbos_reflexivos.md",
-   "entradas": 29,
-   "temas": [
-    "Verbos reflexivos",
-    "Conjugación: просыпаться (despertarse)",
-    "Conjugación: умываться (lavarse la cara)",
-    "Frases con verbos reflexivos"
-   ]
-  },
-  {
-   "id": "clase_conjugaciones",
-   "titulo": "Conjugaciones",
-   "origen": "profesor",
-   "fecha": "2026-04-14",
-   "formato": "md",
-   "path": "lessons/teacher/clase_conjugaciones.md",
-   "entradas": 45,
-   "temas": [
-    "Verbos",
-    "Verbos",
-    "Conjugación: работать (trabajar)",
-    "Conjugación: говорить (hablar)"
-   ]
-  },
-  {
-   "id": "clase_vocabulario_completo",
-   "titulo": "Vocabulario completo",
-   "origen": "profesor",
-   "fecha": "2026-04-14",
-   "formato": "md",
-   "path": "lessons/teacher/clase_vocabulario_completo.md",
-   "entradas": 116,
-   "temas": [
-    "Países y nacionalidades",
-    "De dónde eres",
-    "Nacionalidades",
-    "Dónde vives"
-   ]
-  },
-  {
-   "id": "clase_familia_personas",
-   "titulo": "Familia y personas",
-   "origen": "profesor",
-   "fecha": "2026-03-26",
-   "formato": "md",
-   "path": "lessons/teacher/clase_familia_personas.md",
-   "entradas": 47,
-   "temas": [
-    "Familia",
-    "Amigos y personas",
-    "Pertenencias y objetos personales",
-    "Frases con posesivos"
-   ]
-  },
-  {
-   "id": "clase_numeros_1",
-   "titulo": "Números (1)",
-   "origen": "profesor",
-   "fecha": "2026-03-24",
-   "formato": "md",
-   "path": "lessons/teacher/clase_numeros_1.md",
-   "entradas": 32,
-   "temas": [
-    "Números del 0 al 10",
-    "Números del 11 al 19",
-    "Decenas",
-    "Números en contexto"
-   ]
-  },
-  {
-   "id": "clase_pronombres",
-   "titulo": "Pronombres",
-   "origen": "profesor",
-   "fecha": "2026-03-24",
-   "formato": "md",
-   "path": "lessons/teacher/clase_pronombres.md",
-   "entradas": 7,
-   "temas": [
-    "Conversación práctica"
-   ]
-  },
-  {
-   "id": "clase_dias_meses_numeros",
-   "titulo": "Días, meses y números",
-   "origen": "profesor",
-   "fecha": "2026-03-22",
-   "formato": "md",
-   "path": "lessons/teacher/clase_dias_meses_numeros.md",
-   "entradas": 34,
-   "temas": [
-    "Días de la semana",
-    "Meses del año",
-    "Números ordinales"
-   ]
-  },
-  {
-   "id": "dialogo_ruso_metro",
-   "titulo": "Diálogo: el metro",
-   "origen": "profesor",
-   "fecha": "2026-03-10",
-   "formato": "md",
-   "path": "lessons/teacher/dialogo_ruso_metro.md",
-   "entradas": 6,
-   "temas": [
-    "Diálogo: Encontrarse en el metro"
-   ]
-  },
-  {
-   "id": "ejemplo-vocabulario",
-   "titulo": "Ejemplo de vocabulario",
-   "origen": "profesor",
-   "fecha": "2026-03-03",
-   "formato": "md",
-   "path": "lessons/teacher/ejemplo-vocabulario.md",
-   "entradas": 21,
-   "temas": [
-    "Saludos básicos",
-    "Frases esenciales",
-    "En el restaurante"
-   ]
   }
  ]
 }

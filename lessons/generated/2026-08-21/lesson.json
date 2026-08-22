@@ -1,0 +1,65 @@
+{
+ "version": 1,
+ "fecha": "2026-08-21",
+ "numero": 4,
+ "titulo": "Урок 4",
+ "semana": 1,
+ "gramatica": "Género de los sustantivos",
+ "duracion_min": 15,
+ "foco": "Seguimos fijando мужчина, женщина, мама, папа, брат y сестра, esta vez dentro de frases con las fórmulas de cortesía que ya conoces. La idea es que el género deje de ser una regla que recitas y se convierta en algo que oyes de forma automática.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Sin traducir mentalmente: solo sonido y significado.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "мужчина", "ru_stress": "мужчи́на", "translit": "muzhchina", "es": "hombre"},
+    {"ru": "женщина", "ru_stress": "же́нщина", "translit": "zhenschina", "es": "mujer"},
+    {"ru": "мама", "ru_stress": "ма́ма", "translit": "mama", "es": "mamá"},
+    {"ru": "папа", "ru_stress": "па́па", "translit": "papa", "es": "papá"},
+    {"ru": "брат", "ru_stress": "брат", "translit": "brat", "es": "hermano"},
+    {"ru": "сестра", "ru_stress": "сестра́", "translit": "sestra", "es": "hermana"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "intro": "Lee el español, di el ruso en voz alta antes de tocar. Marca honestamente: de eso depende cuándo vuelve.",
+   "tipo": "repaso",
+   "items": [
+    {"id": 3, "es": "adiós", "ru": "до свидания", "ru_stress": "до свида́ния", "translit": "do svidaniya"},
+    {"id": 8, "es": "perdone", "ru": "простите", "ru_stress": "прости́те", "translit": "prostite"},
+    {"id": 11, "es": "buenas noches (al saludar)", "ru": "добрый вечер", "ru_stress": "до́брый ве́чер", "translit": "dobryi vecher"},
+    {"id": 12, "es": "buenas noches (al despedirse)", "ru": "спокойной ночи", "ru_stress": "споко́йной но́чи", "translit": "spokoinoi nochi"},
+    {"id": 13, "es": "sí", "ru": "да", "ru_stress": "да", "translit": "da"},
+    {"id": 14, "es": "no", "ru": "нет", "ru_stress": "нет", "translit": "net"},
+    {"id": 15, "es": "mucho gusto", "ru": "очень приятно", "ru_stress": "о́чень прия́тно", "translit": "ochen' priyatno"},
+    {"id": 16, "es": "persona", "ru": "человек", "ru_stress": "челове́к", "translit": "chelovek"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Género de los sustantivos",
+   "explicacion": "Hoy repasamos las mismas seis palabras de ayer (мужчина, женщина, мама, папа, брат, сестра) pero metidas en frases con las fórmulas de cortesía que ya conoces. Vuelve a aparecer la excepción que más cuesta automatizar: мужчина y папа terminan en -а como si fueran femeninas, pero son masculinas porque nombran a un hombre.",
+   "reglas": [
+    {"regla": "Consonante final → masculino", "ejemplos": "брат · челове́к"},
+    {"regla": "-а / -я → femenino (regla general)", "ejemplos": "же́нщина · сестра́"},
+    {"regla": "Excepción: manda el sexo natural, no la terminación", "ejemplos": "мужчи́на (m) · па́па (m)"}
+   ],
+   "frases": [
+    {"ru": "Добрый вечер! Я брат.", "ru_stress": "До́брый ве́чер! Я брат.", "es": "¡Buenas noches! Soy el hermano.", "nota": "брат: consonante final, masculino regular"},
+    {"ru": "Очень приятно, сестра!", "ru_stress": "О́чень прия́тно, сестра́!", "es": "¡Mucho gusto, hermana!", "nota": "сестра: -а final, femenino regular"},
+    {"ru": "Это мужчина, а не женщина.", "ru_stress": "Э́то мужчи́на, а не же́нщина.", "es": "Este es un hombre, no una mujer.", "nota": "мужчина: -а pero masculino (excepción); женщина: -а, femenino regular"},
+    {"ru": "Простите, где мама?", "ru_stress": "Прости́те, где ма́ма?", "es": "Perdone, ¿dónde está mamá?", "nota": "мама: -а, femenino regular"},
+    {"ru": "Да, это папа.", "ru_stress": "Да, э́то па́па.", "es": "Sí, este es papá.", "nota": "папа: -а pero masculino, misma excepción que мужчина"},
+    {"ru": "Нет, здесь только человек.", "ru_stress": "Нет, здесь то́лько челове́к.", "es": "No, aquí solo hay una persona.", "nota": "человек: consonante final, masculino regular"}
+   ]
+  }
+ ]
+}
