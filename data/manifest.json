@@ -1,7 +1,21 @@
 {
  "version": 1,
- "generado": "2026-08-21",
+ "generado": "2026-08-25",
  "lecciones": [
+  {
+   "id": "2026-08-25",
+   "titulo": "Урок 5",
+   "origen": "ia",
+   "fecha": "2026-08-25",
+   "formato": "lesson-json",
+   "path": "lessons/generated/2026-08-25/lesson.json",
+   "semana": 1,
+   "duracion_min": 15,
+   "temas": [
+    "Género de los sustantivos"
+   ],
+   "entradas": 16
+  },
   {
    "id": "clase_adjetivos_adverbios",
    "titulo": "Adjetivos y adverbios",
