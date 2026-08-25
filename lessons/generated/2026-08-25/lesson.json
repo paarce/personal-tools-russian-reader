@@ -1,0 +1,67 @@
+
+ "version": 1,
+ "fecha": "2026-08-25",
+ "numero": 5,
+ "titulo": "Урок 5",
+ "semana": 1,
+ "gramatica": "Género de los sustantivos",
+ "duracion_min": 15,
+ "foco": "Cuatro palabras nuevas de familia (жена, муж, ребёнок, семья) y repaso de saludos. Ojo con дочь: termina en -ь pero es femenina — de las que hay que memorizar caso por caso.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Sin traducir mentalmente: solo sonido y significado.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "жена", "ru_stress": "жена́", "translit": "zhena", "es": "esposa"},
+    {"ru": "муж", "ru_stress": "муж", "translit": "muzh", "es": "marido"},
+    {"ru": "ребёнок", "ru_stress": "ребёнок", "translit": "rebyonok", "es": "niño, hijo pequeño"},
+    {"ru": "семья", "ru_stress": "семья́", "translit": "sem'ya", "es": "familia"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "intro": "Lee el español, di el ruso en voz alta antes de tocar. Marca honestamente: de eso depende cuándo vuelve.",
+   "tipo": "repaso",
+   "items": [
+    {"id": 11, "ru": "добрый вечер", "ru_stress": "до́брый ве́чер", "translit": "dobryi vecher", "es": "buenas noches (al saludar)"},
+    {"id": 12, "ru": "спокойной ночи", "ru_stress": "споко́йной но́чи", "translit": "spokoinoi nochi", "es": "buenas noches (al despedirse)"},
+    {"id": 15, "ru": "очень приятно", "ru_stress": "о́чень прия́тно", "translit": "ochen' priyatno", "es": "mucho gusto"},
+    {"id": 23, "ru": "сын", "ru_stress": "сын", "translit": "syn", "es": "hijo"},
+    {"id": 24, "ru": "дочь", "ru_stress": "дочь", "translit": "doch'", "es": "hija"},
+    {"id": 25, "ru": "друг", "ru_stress": "друг", "translit": "drug", "es": "amigo"},
+    {"id": 26, "ru": "подруга", "ru_stress": "подру́га", "translit": "podruga", "es": "amiga"},
+    {"id": 2, "ru": "здравствуйте", "ru_stress": "здра́вствуйте", "translit": "zdravstvuite", "es": "hola / buenos días (formal)"},
+    {"id": 4, "ru": "пока", "ru_stress": "пока́", "translit": "poka", "es": "chao, hasta luego"},
+    {"id": 5, "ru": "спасибо", "ru_stress": "спаси́бо", "translit": "spasibo", "es": "gracias"},
+    {"id": 6, "ru": "пожалуйста", "ru_stress": "пожа́луйста", "translit": "pozhaluista", "es": "por favor / de nada"},
+    {"id": 7, "ru": "извините", "ru_stress": "извини́те", "translit": "izvinite", "es": "disculpe"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Género de los sustantivos",
+   "explicacion": "Seguimos con el mismo punto de la semana, hoy con vocabulario de familia. La mayoría de las palabras nuevas son regulares por terminación, pero дочь es de las que no se deducen: termina en -ь y hay que memorizar que es femenina (como день es masculino).",
+   "reglas": [
+    {"regla": "Consonante final → masculino", "ejemplos": "муж · ребёнок"},
+    {"regla": "-а / -я → femenino (regla general)", "ejemplos": "жена́ · семья́"},
+    {"regla": "-ь final: no se deduce, hay que memorizarlo", "ejemplos": "дочь (f) · день (m)"}
+   ],
+   "frases": [
+    {"ru": "Здравствуйте! Это моя семья.", "ru_stress": "Здра́вствуйте! Э́то моя́ семья́.", "es": "¡Hola! Esta es mi familia.", "nota": "семья: -я final, femenino regular"},
+    {"ru": "Очень приятно, это мой сын.", "ru_stress": "О́чень прия́тно, э́то мой сын.", "es": "Mucho gusto, este es mi hijo.", "nota": "сын: consonante final, masculino regular"},
+    {"ru": "А это моя дочь.", "ru_stress": "А э́то моя́ дочь.", "es": "Y esta es mi hija.", "nota": "дочь: termina en -ь; aquí es femenino, hay que memorizarlo"},
+    {"ru": "Друг дома, а подруга на работе.", "ru_stress": "Друг до́ма, а подру́га на рабо́те.", "es": "El amigo está en casa, y la amiga en el trabajo.", "nota": "друг (consonante, masc.) / подруга (-а, fem.): misma raíz, género distinto"},
+    {"ru": "Спокойной ночи, муж и жена!", "ru_stress": "Споко́йной но́чи, муж и жена́!", "es": "¡Buenas noches, marido y mujer!", "nota": "муж (consonante, masc.) / жена (-а, fem.)"},
+    {"ru": "Извините, где ребёнок?", "ru_stress": "Извини́те, где ребёнок?", "es": "Disculpe, ¿dónde está el niño?", "nota": "ребёнок: consonante final → masculino, aunque hable de un bebé"}
+   ]
+  }
+ ]
+}
