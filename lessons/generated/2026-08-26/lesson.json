@@ -1,0 +1,86 @@
+{
+ "version": 1,
+ "fecha": "2026-08-26",
+ "numero": 6,
+ "titulo": "Урок 6",
+ "semana": 1,
+ "gramatica": "Género de los sustantivos",
+ "duracion_min": 15,
+ "foco": "Cuatro palabras nuevas de preguntas (кто, что, где, когда) y repaso de saludos y familia. En gramática seguimos con el género: hoy la excepción de мужчина y папа, que terminan en -а pero son masculinos por sentido natural.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Sin traducir mentalmente: solo sonido y significado.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "кто", "ru_stress": "кто", "translit": "kto", "es": "quién"},
+    {"ru": "что", "ru_stress": "что", "translit": "chto", "es": "qué"},
+    {"ru": "где", "ru_stress": "где", "translit": "gde", "es": "dónde"},
+    {"ru": "когда", "ru_stress": "когда́", "translit": "kogda", "es": "cuándo"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "intro": "Lee el español, di el ruso en voz alta antes de tocar. Marca honestamente: de eso depende cuándo vuelve.",
+   "tipo": "repaso",
+   "items": [
+    {"id": 11, "ru": "добрый вечер", "ru_stress": "до́брый ве́чер", "translit": "dobryi vecher", "es": "buenas noches (al saludar)"},
+    {"id": 12, "ru": "спокойной ночи", "ru_stress": "споко́йной но́чи", "translit": "spokoinoi nochi", "es": "buenas noches (al despedirse)"},
+    {"id": 27, "ru": "жена", "ru_stress": "жена́", "translit": "zhena", "es": "esposa"},
+    {"id": 28, "ru": "муж", "ru_stress": "муж", "translit": "muzh", "es": "marido"},
+    {"id": 29, "ru": "ребёнок", "ru_stress": "ребёнок", "translit": "rebyonok", "es": "niño, hijo pequeño"},
+    {"id": 30, "ru": "семья", "ru_stress": "семья́", "translit": "sem'ya", "es": "familia"},
+    {"id": 9, "ru": "доброе утро", "ru_stress": "до́брое у́тро", "translit": "dobroye utro", "es": "buenos días"},
+    {"id": 10, "ru": "добрый день", "ru_stress": "до́брый день", "translit": "dobryi den'", "es": "buenas tardes"},
+    {"id": 13, "ru": "да", "ru_stress": "да", "translit": "da", "es": "sí"},
+    {"id": 14, "ru": "нет", "ru_stress": "нет", "translit": "net", "es": "no"},
+    {"id": 16, "ru": "человек", "ru_stress": "челове́к", "translit": "chelovek", "es": "persona"},
+    {"id": 3, "ru": "до свидания", "ru_stress": "до свида́ния", "translit": "do svidaniya", "es": "adiós"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Género de los sustantivos",
+   "explicacion": "Seguimos con el género, esta vez cruzado con las nuevas palabras de pregunta. Hoy toca una excepción importante: мужчина y папа terminan en -а, la marca típica de femenino, pero son masculinos porque se refieren a hombres — el sentido natural manda sobre la terminación.",
+   "reglas": [
+    {"regla": "Consonante final → masculino", "ejemplos": "челове́к · друг · муж"},
+    {"regla": "-а / -я → femenino (regla general)", "ejemplos": "семья́ · подру́га · жена́"},
+    {"regla": "Sentido natural sobre terminación: hombres en -а son masculinos", "ejemplos": "мужчи́на · па́па"},
+    {"regla": "-ь final: no se deduce, hay que memorizarlo", "ejemplos": "дочь (f) · день (m)"}
+   ],
+   "frases": [
+    {"ru": "Кто это, мужчина или женщина? — Это мужчина.",
+     "ru_stress": "Кто э́то, мужчи́на и́ли же́нщина? — Э́то мужчи́на.",
+     "es": "¿Quién es, un hombre o una mujer? — Es un hombre.",
+     "nota": "мужчина termina en -а pero es masculino: el sentido natural manda, como папа"},
+    {"ru": "Где мой друг, а где моя подруга?",
+     "ru_stress": "Где мой друг, а где моя́ подру́га?",
+     "es": "¿Dónde está mi amigo, y dónde mi amiga?",
+     "nota": "друг (consonante, masc.) / подруга (-а, fem.): mismo par que брат/сестра"},
+    {"ru": "Кто дома — муж или жена?",
+     "ru_stress": "Кто до́ма — муж и́ли жена́?",
+     "es": "¿Quién está en casa, el marido o la esposa?",
+     "nota": "муж (consonante, masc.) / жена (-а, fem.)"},
+    {"ru": "Простите, где ребёнок?",
+     "ru_stress": "Прости́те, где ребёнок?",
+     "es": "Perdone, ¿dónde está el niño?",
+     "nota": "ребёнок: consonante final → masculino, aunque hable de un bebé"},
+    {"ru": "Да, здесь вся семья.",
+     "ru_stress": "Да, здесь вся семья́.",
+     "es": "Sí, aquí está toda la familia.",
+     "nota": "семья: -я final, femenino regular"},
+    {"ru": "Здесь только один человек.",
+     "ru_stress": "Здесь то́лько оди́н челове́к.",
+     "es": "Aquí solo hay una persona.",
+     "nota": "человек: consonante final, masculino regular"}
+   ]
+  }
+ ]
+}
