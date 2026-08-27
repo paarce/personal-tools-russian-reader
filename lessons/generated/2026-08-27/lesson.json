@@ -1,0 +1,66 @@
+{
+ "version": 1,
+ "fecha": "2026-08-27",
+ "numero": 7,
+ "titulo": "Урок 7",
+ "semana": 1,
+ "gramatica": "Género de los sustantivos",
+ "duracion_min": 15,
+ "foco": "Última clase de la semana sobre género: hoy el foco es la excepción — palabras que terminan en -а pero son masculinas porque el sexo real manda sobre la terminación (мужчина, папа).",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Son las primeras palabras interrogativas: las vas a necesitar constantemente.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "почему", "ru_stress": "почему́", "translit": "pochemu", "es": "por qué"},
+    {"ru": "как", "ru_stress": "как", "translit": "kak", "es": "cómo"},
+    {"ru": "сколько", "ru_stress": "ско́лько", "translit": "skol'ko", "es": "cuánto"},
+    {"ru": "куда", "ru_stress": "куда́", "translit": "kuda", "es": "a dónde"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "tipo": "repaso",
+   "items": [
+    {"id": 11, "es": "buenas noches (al saludar)", "ru": "добрый вечер", "ru_stress": "до́брый ве́чер", "translit": "dobryi vecher"},
+    {"id": 12, "es": "buenas noches (al despedirse)", "ru": "спокойной ночи", "ru_stress": "споко́йной но́чи", "translit": "spokoinoi nochi"},
+    {"id": 31, "es": "quién", "ru": "кто", "ru_stress": "кто", "translit": "kto"},
+    {"id": 32, "es": "qué", "ru": "что", "ru_stress": "что", "translit": "chto"},
+    {"id": 33, "es": "dónde", "ru": "где", "ru_stress": "где", "translit": "gde"},
+    {"id": 34, "es": "cuándo", "ru": "когда", "ru_stress": "когда́", "translit": "kogda"},
+    {"id": 8, "es": "perdone", "ru": "простите", "ru_stress": "прости́те", "translit": "prostite"},
+    {"id": 17, "es": "hombre", "ru": "мужчина", "ru_stress": "мужчи́на", "translit": "muzhchina"},
+    {"id": 18, "es": "mujer", "ru": "женщина", "ru_stress": "же́нщина", "translit": "zhenschina"},
+    {"id": 19, "es": "mamá", "ru": "мама", "ru_stress": "ма́ма", "translit": "mama"},
+    {"id": 20, "es": "papá", "ru": "папа", "ru_stress": "па́па", "translit": "papa"},
+    {"id": 21, "es": "hermano", "ru": "брат", "ru_stress": "брат", "translit": "brat"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Género de los sustantivos",
+   "explicacion": "Cierre de la semana: repasamos las tres reglas, pero el foco de hoy es la excepción que más confunde — мужчина y папа terminan en -а, la marca típica de femenino, y sin embargo son masculinos. La terminación no siempre gana: si la palabra nombra a una persona de sexo real conocido, ese sexo manda.",
+   "reglas": [
+    {"regla": "Consonante final → masculino", "ejemplos": "брат · друг · человек"},
+    {"regla": "-а / -я → femenino (regla general)", "ejemplos": "мама · сестра · семья"},
+    {"regla": "Excepción: sexo real masculino con terminación -а", "ejemplos": "мужчина (m) · папа (m) · дядя (m, tío)"}
+   ],
+   "frases": [
+    {"ru": "Кто это — мужчина или женщина?", "ru_stress": "Кто э́то — мужчи́на и́ли же́нщина?", "es": "¿Quién es este, un hombre o una mujer?", "nota": "мужчина termina en -а pero es masculino: el sexo real manda sobre la terminación."},
+    {"ru": "Здесь брат, а там сестра.", "ru_stress": "Здесь брат, а там сестра́.", "es": "Aquí está el hermano, allí la hermana.", "nota": "брат: consonante final → masculino. сестра: -а → femenino."},
+    {"ru": "Простите, где мама и папа?", "ru_stress": "Прости́те, где ма́ма и па́па?", "es": "Disculpe, ¿dónde están mamá y papá?", "nota": "папа también termina en -а y también es masculino, igual que мужчина."},
+    {"ru": "Кто это? — Это мужчина.", "ru_stress": "Кто э́то? — Э́то мужчи́на.", "es": "¿Quién es? — Es un hombre.", "nota": "Otra vez la excepción: -а no siempre es femenino."},
+    {"ru": "Где сестра? Сестра там.", "ru_stress": "Где сестра́? Сестра́ там.", "es": "¿Dónde está la hermana? La hermana está allí.", "nota": "сестра es un femenino regular en -а, sin excepción."},
+    {"ru": "Добрый вечер! Здесь мама, папа и брат.", "ru_stress": "До́брый ве́чер! Здесь ма́ма, па́па и брат.", "es": "¡Buenas noches! Aquí están mamá, papá y hermano.", "nota": "Tres géneros en una frase: мама (f regular), папа (m excepción), брат (m consonante)."}
+   ]
+  }
+ ]
+}
