@@ -1,0 +1,66 @@
+{
+ "version": 1,
+ "fecha": "2026-08-28",
+ "numero": 8,
+ "titulo": "Урок 8",
+ "semana": 2,
+ "gramatica": "Pronombres personales y la ausencia de \"ser\"",
+ "duracion_min": 15,
+ "foco": "Empieza la semana 2. Hoy: los pronombres personales (я, ты, он/она/оно, мы, вы, они) y la regla que más sorprende al principio — en presente el ruso no usa un verbo para \"ser\". «Он друг» ya significa completo \"Él es un amigo\", sin más palabras.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Son las últimas palabras interrogativas y los dos adverbios de lugar más usados.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "какой", "ru_stress": "како́й", "translit": "kakoi", "es": "cuál, qué tipo de"},
+    {"ru": "чей", "ru_stress": "чей", "translit": "chei", "es": "de quién"},
+    {"ru": "здесь", "ru_stress": "здесь", "translit": "zdes'", "es": "aquí"},
+    {"ru": "там", "ru_stress": "там", "translit": "tam", "es": "allí"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "tipo": "repaso",
+   "items": [
+    {"id": 8, "es": "perdone", "ru": "простите", "ru_stress": "прости́те", "translit": "prostite"},
+    {"id": 35, "es": "por qué", "ru": "почему", "ru_stress": "почему́", "translit": "pochemu"},
+    {"id": 36, "es": "cómo", "ru": "как", "ru_stress": "как", "translit": "kak"},
+    {"id": 37, "es": "cuánto", "ru": "сколько", "ru_stress": "ско́лько", "translit": "skol'ko"},
+    {"id": 38, "es": "a dónde", "ru": "куда", "ru_stress": "куда́", "translit": "kuda"},
+    {"id": 22, "es": "hermana", "ru": "сестра", "ru_stress": "сестра́", "translit": "sestra"},
+    {"id": 15, "es": "mucho gusto", "ru": "очень приятно", "ru_stress": "о́чень прия́тно", "translit": "ochen' priyatno"},
+    {"id": 23, "es": "hijo", "ru": "сын", "ru_stress": "сын", "translit": "syn"},
+    {"id": 24, "es": "hija", "ru": "дочь", "ru_stress": "дочь", "translit": "doch'"},
+    {"id": 25, "es": "amigo", "ru": "друг", "ru_stress": "друг", "translit": "drug"},
+    {"id": 26, "es": "amiga", "ru": "подруга", "ru_stress": "подру́га", "translit": "podruga"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Pronombres personales y la ausencia de \"ser\"",
+   "explicacion": "Los pronombres personales rusos son я (yo), ты (tú), он/она/оно (él/ella/ello), мы (nosotros), вы (usted/vosotros/ustedes) y они (ellos/ellas). Lo más importante de esta semana: en presente, el ruso no usa ningún verbo para \"ser\" o \"estar\". «Он друг» ya es la frase completa \"Él es un amigo\" — no falta ningún verbo. он/она/оно además concuerdan con el género de la persona o cosa a la que reemplazan.",
+   "reglas": [
+    {"regla": "Sin verbo \"ser\" en presente", "ejemplos": "Он друг. (Él es un amigo.) · Мы семья. (Somos una familia.)"},
+    {"regla": "он / она / оно concuerdan en género", "ejemplos": "брат → он · сестра → она · окно → оно"},
+    {"regla": "вы sirve para \"usted\" formal y para plural", "ejemplos": "Вы здесь? (¿Está usted aquí? / ¿Estáis aquí?)"},
+    {"regla": "здесь / там no necesitan verbo tampoco", "ejemplos": "Мама здесь, папа там. (Mamá está aquí, papá está allí.)"}
+   ],
+   "frases": [
+    {"ru": "Он мужчина. Она женщина.", "ru_stress": "Он мужчи́на. Она́ же́нщина.", "es": "Él es hombre. Ella es mujer.", "nota": "Ni мужчина ni женщина necesitan un verbo: el pronombre más el sustantivo ya forman la frase."},
+    {"ru": "Кто ты? — Я друг.", "ru_stress": "Кто ты? — Я друг.", "es": "¿Quién eres tú? — Soy un amigo.", "nota": "я + друг: otra vez sin verbo \"ser\"."},
+    {"ru": "Кто он? Он брат, а она сестра.", "ru_stress": "Кто он? Он брат, а она́ сестра́.", "es": "¿Quién es él? Él es el hermano, y ella la hermana.", "nota": "он concuerda con брат (masculino), она con сестра (femenino)."},
+    {"ru": "Мы семья.", "ru_stress": "Мы семья́.", "es": "Somos una familia.", "nota": "мы + семья, sin verbo, igual que en singular."},
+    {"ru": "Вы здесь, а они там.", "ru_stress": "Вы здесь, а они́ там.", "es": "Vosotros estáis aquí, y ellos allí.", "nota": "здесь y там tampoco llevan verbo: el pronombre solo ya sitúa a la persona."},
+    {"ru": "Это мама. Она здесь. Это папа. Он там.", "ru_stress": "Э́то ма́ма. Она́ здесь. Э́то па́па. Он там.", "es": "Esta es mamá. Ella está aquí. Este es papá. Él está allí.", "nota": "мама → она (femenino), папа → он (masculino, aunque termine en -а: es la excepción de la semana pasada)."}
+   ]
+  }
+ ]
+}
