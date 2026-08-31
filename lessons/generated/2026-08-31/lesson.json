@@ -1,0 +1,67 @@
+{
+ "version": 1,
+ "fecha": "2026-08-31",
+ "numero": 9,
+ "titulo": "Урок 9",
+ "semana": 2,
+ "gramatica": "Pronombres personales y la ausencia de \"ser\"",
+ "duracion_min": 15,
+ "foco": "Segundo día con los pronombres personales y la frase sin verbo \"ser\". Hoy se ve además que dos adjetivos seguidos (большой и старый) o una enumeración (жена, муж и ребёнок) tampoco necesitan verbo: el patrón de ayer se repite en más contextos.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Hoy empiezan los números: del cero al tres.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "ноль", "ru_stress": "ноль", "translit": "nol'", "es": "cero"},
+    {"ru": "один", "ru_stress": "оди́н", "translit": "odin", "es": "uno"},
+    {"ru": "два", "ru_stress": "два", "translit": "dva", "es": "dos"},
+    {"ru": "три", "ru_stress": "три", "translit": "tri", "es": "tres"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "tipo": "repaso",
+   "items": [
+    {"id": 37, "es": "cuánto", "ru": "сколько", "ru_stress": "ско́лько", "translit": "skol'ko"},
+    {"id": 38, "es": "a dónde", "ru": "куда", "ru_stress": "куда́", "translit": "kuda"},
+    {"id": 8, "es": "perdone", "ru": "простите", "ru_stress": "прости́те", "translit": "prostite"},
+    {"id": 39, "es": "cuál, qué tipo de", "ru": "какой", "ru_stress": "како́й", "translit": "kakoi"},
+    {"id": 40, "es": "de quién", "ru": "чей", "ru_stress": "чей", "translit": "chei"},
+    {"id": 41, "es": "aquí", "ru": "здесь", "ru_stress": "здесь", "translit": "zdes'"},
+    {"id": 42, "es": "allí", "ru": "там", "ru_stress": "там", "translit": "tam"},
+    {"id": 27, "es": "esposa", "ru": "жена", "ru_stress": "жена́", "translit": "zhena"},
+    {"id": 28, "es": "marido", "ru": "муж", "ru_stress": "муж", "translit": "muzh"},
+    {"id": 29, "es": "niño, hijo pequeño", "ru": "ребёнок", "ru_stress": "ребёнок", "translit": "rebyonok"},
+    {"id": 30, "es": "familia", "ru": "семья", "ru_stress": "семья́", "translit": "sem'ya"},
+    {"id": 11, "es": "buenas noches (al saludar)", "ru": "добрый вечер", "ru_stress": "до́брый ве́чер", "translit": "dobryi vecher"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Pronombres personales y la ausencia de \"ser\"",
+   "explicacion": "Repaso del punto de ayer con frases nuevas: он, она, оно, мы, вы y они siguen sin necesitar ningún verbo para \"ser\" o \"estar\". Hoy además se ve que ese mismo patrón sirve para encadenar dos adjetivos seguidos o para enumerar varias cosas seguidas — nunca hace falta un verbo de por medio.",
+   "reglas": [
+    {"regla": "Sin verbo \"ser\" en presente (repaso)", "ejemplos": "Он большой. (Es grande.) · Там семья. (Allí está la familia.)"},
+    {"regla": "он / она concuerdan en género con lo que reemplazan", "ejemplos": "дом → он · сестра → она · семья → она"},
+    {"regla": "здесь / там sitúan sin necesidad de verbo", "ejemplos": "Она здесь, а он там."},
+    {"regla": "мы / вы / они funcionan igual", "ejemplos": "Мы здесь, а вы там. · Кто они? Мужчина и женщина."}
+   ],
+   "frases": [
+    {"ru": "Где сестра? Она здесь.", "ru_stress": "Где сестра́? Она́ здесь.", "es": "¿Dónde está la hermana? Ella está aquí.", "nota": "она reemplaza a сестра (femenino); здесь no necesita verbo."},
+    {"ru": "А где брат? Он там.", "ru_stress": "А где брат? Он там.", "es": "¿Y dónde está el hermano? Él está allí.", "nota": "он reemplaza a брат (masculino)."},
+    {"ru": "Какой это дом? Он большой и старый.", "ru_stress": "Како́й э́то дом? Он большо́й и ста́рый.", "es": "¿Cómo es esta casa? Es grande y vieja.", "nota": "он reemplaza a дом; dos adjetivos seguidos, sin verbo entre medias."},
+    {"ru": "Кто там? Там семья: жена, муж и ребёнок.", "ru_stress": "Кто там? Там семья́: жена́, муж и ребёнок.", "es": "¿Quién hay allí? Allí está la familia: la esposa, el marido y el niño.", "nota": "там + enumeración, otra vez sin verbo."},
+    {"ru": "Мы здесь, а вы там.", "ru_stress": "Мы здесь, а вы там.", "es": "Nosotros estamos aquí, y vosotros allí.", "nota": "мы y вы funcionan igual que los pronombres de ayer."},
+    {"ru": "Кто они? Мужчина и женщина.", "ru_stress": "Кто они́? Мужчи́на и же́нщина.", "es": "¿Quiénes son ellos? Un hombre y una mujer.", "nota": "они reemplaza a dos personas ya mencionadas."}
+   ]
+  }
+ ]
+}
