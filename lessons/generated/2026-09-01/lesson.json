@@ -1,0 +1,66 @@
+{
+ "version": 1,
+ "fecha": "2026-09-01",
+ "numero": 10,
+ "titulo": "Урок 10",
+ "semana": 2,
+ "gramatica": "Pronombres personales y la ausencia de \"ser\"",
+ "duracion_min": 15,
+ "foco": "Tercer día con los pronombres sin verbo \"ser\". Hoy el patrón se combina con los números del cuatro al siete (siguen sin necesitar verbo para sumar) y con un primer contacto con la concordancia de \"какой\" según el género del sustantivo.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Siguen los números: del cuatro al siete.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "четыре", "ru_stress": "четы́ре", "translit": "chetyre", "es": "cuatro"},
+    {"ru": "пять", "ru_stress": "пять", "translit": "pyat'", "es": "cinco"},
+    {"ru": "шесть", "ru_stress": "шесть", "translit": "shest'", "es": "seis"},
+    {"ru": "семь", "ru_stress": "семь", "translit": "sem'", "es": "siete"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "tipo": "repaso",
+   "items": [
+    {"id": 29, "es": "niño, hijo pequeño", "ru": "ребёнок", "ru_stress": "ребёнок", "translit": "rebyonok"},
+    {"id": 38, "es": "a dónde", "ru": "куда", "ru_stress": "куда́", "translit": "kuda"},
+    {"id": 37, "es": "cuánto", "ru": "сколько", "ru_stress": "ско́лько", "translit": "skol'ko"},
+    {"id": 43, "es": "cero", "ru": "ноль", "ru_stress": "ноль", "translit": "nol'"},
+    {"id": 44, "es": "uno", "ru": "один", "ru_stress": "оди́н", "translit": "odin"},
+    {"id": 45, "es": "dos", "ru": "два", "ru_stress": "два", "translit": "dva"},
+    {"id": 46, "es": "tres", "ru": "три", "ru_stress": "три", "translit": "tri"},
+    {"id": 12, "es": "buenas noches (al despedirse)", "ru": "спокойной ночи", "ru_stress": "споко́йной но́чи", "translit": "spokoinoi nochi"},
+    {"id": 31, "es": "quién", "ru": "кто", "ru_stress": "кто", "translit": "kto"},
+    {"id": 32, "es": "qué", "ru": "что", "ru_stress": "что", "translit": "chto"},
+    {"id": 33, "es": "dónde", "ru": "где", "ru_stress": "где", "translit": "gde"},
+    {"id": 34, "es": "cuándo", "ru": "когда", "ru_stress": "когда́", "translit": "kogda"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Pronombres personales y la ausencia de \"ser\"",
+   "explicacion": "Tercer día con el mismo patrón: nunca hace falta un verbo para \"ser\" o \"estar\" en presente. Hoy se ve que las sumas con números funcionan igual — \"один и три — четыре\" no lleva verbo, igual que \"он маленький\" — y aparece un primer matiz: \"какой\" cambia de forma según el género de lo que pregunta (какой дом, pero какая книга).",
+   "reglas": [
+    {"regla": "Sin verbo \"ser\" en presente (repaso)", "ejemplos": "Он маленький. (Es pequeño.) · Это семья. (Es una familia.)"},
+    {"regla": "Las sumas también van sin verbo", "ejemplos": "Один и три — четыре. · Пять и два — семь."},
+    {"regla": "какой concuerda en género: какой / какая / какое", "ejemplos": "какой дом (m) · какая книга (f) · какое окно (n)"}
+   ],
+   "frases": [
+    {"ru": "Кто это? Это ребёнок. Он маленький.", "ru_stress": "Кто э́то? Э́то ребёнок. Он ма́ленький.", "es": "¿Quién es? Es un niño. Es pequeño.", "nota": "ребёнок es masculino aunque no lo parezca; он lo reemplaza."},
+    {"ru": "Сын здесь, дочь там. Это семья.", "ru_stress": "Сын здесь, дочь там. Э́то семья́.", "es": "El hijo está aquí, la hija allí. Es una familia.", "nota": "\"это + sustantivo\" también forma predicado sin verbo."},
+    {"ru": "Один и три — четыре.", "ru_stress": "Оди́н и три — четы́ре.", "es": "Uno más tres, cuatro.", "nota": "las sumas no necesitan verbo, igual que las descripciones."},
+    {"ru": "Пять и два — семь.", "ru_stress": "Пять и два — семь.", "es": "Cinco más dos, siete."},
+    {"ru": "Какая это книга? Она новая и лёгкая.", "ru_stress": "Кака́я э́то кни́га? Она́ но́вая и лёгкая.", "es": "¿Qué tipo de libro es este? Es nuevo y ligero.", "nota": "книга es femenino: какая, no какой."},
+    {"ru": "Какой сегодня день? Сегодня хороший день.", "ru_stress": "Како́й сего́дня день? Сего́дня хоро́ший день.", "es": "¿Qué día es hoy? Hoy es un buen día.", "nota": "день es masculino: какой, хороший."}
+   ]
+  }
+ ]
+}

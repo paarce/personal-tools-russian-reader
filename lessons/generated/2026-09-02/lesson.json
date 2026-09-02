@@ -1,0 +1,67 @@
+{
+ "version": 1,
+ "fecha": "2026-09-02",
+ "numero": 10,
+ "titulo": "Урок 10",
+ "semana": 2,
+ "gramatica": "Pronombres personales y la ausencia de \"ser\"",
+ "duracion_min": 15,
+ "foco": "Tercer día con los pronombres y la frase sin verbo. Hoy entra быть (ser/estar) como palabra nueva — pero solo para ver que en presente casi nunca se usa: aparece en pasado y futuro, no aquí.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Terminamos los números del 0 al 10, y llega быть: el verbo que hoy vas a ver que casi nunca hace falta.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "восемь", "ru_stress": "во́семь", "translit": "vosem'", "es": "ocho"},
+    {"ru": "девять", "ru_stress": "де́вять", "translit": "devyat'", "es": "nueve"},
+    {"ru": "десять", "ru_stress": "де́сять", "translit": "desyat'", "es": "diez"},
+    {"ru": "быть", "ru_stress": "быть", "translit": "byt'", "es": "ser, estar"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "tipo": "repaso",
+   "items": [
+    {"id": 29, "es": "niño, hijo pequeño", "ru": "ребёнок", "ru_stress": "ребёнок", "translit": "rebyonok"},
+    {"id": 38, "es": "a dónde", "ru": "куда", "ru_stress": "куда́", "translit": "kuda"},
+    {"id": 47, "es": "cuatro", "ru": "четыре", "ru_stress": "четы́ре", "translit": "chetyre"},
+    {"id": 48, "es": "cinco", "ru": "пять", "ru_stress": "пять", "translit": "pyat'"},
+    {"id": 49, "es": "seis", "ru": "шесть", "ru_stress": "шесть", "translit": "shest'"},
+    {"id": 50, "es": "siete", "ru": "семь", "ru_stress": "семь", "translit": "sem'"},
+    {"id": 35, "es": "por qué", "ru": "почему", "ru_stress": "почему́", "translit": "pochemu"},
+    {"id": 36, "es": "cómo", "ru": "как", "ru_stress": "как", "translit": "kak"},
+    {"id": 1, "es": "hola (informal)", "ru": "привет", "ru_stress": "приве́т", "translit": "privet"},
+    {"id": 2, "es": "hola / buenos días (formal)", "ru": "здравствуйте", "ru_stress": "здра́вствуйте", "translit": "zdravstvuite"},
+    {"id": 4, "es": "chao, hasta luego", "ru": "пока", "ru_stress": "пока́", "translit": "poka"},
+    {"id": 5, "es": "gracias", "ru": "спасибо", "ru_stress": "спаси́бо", "translit": "spasibo"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Pronombres personales y la ausencia de \"ser\"",
+   "explicacion": "Tercer día con el mismo punto: en presente el ruso no usa un verbo para \"ser\" ni \"estar\". Hoy aparece быть por primera vez como palabra del banco — y la sorpresa es que casi nunca lo vas a usar: existe para el pasado (был) y el futuro (буду), pero en presente simplemente se omite. Por eso «Я друг» ya es una frase completa.",
+   "reglas": [
+    {"regla": "Presente sin verbo \"ser\" (repaso)", "ejemplos": "Я друг. · Ты большой."},
+    {"regla": "он / она / они sustituyen lo ya dicho", "ejemplos": "сын и дочь → они · мама → она"},
+    {"regla": "быть existe, pero no en presente", "ejemplos": "быть → был (pasado) / буду (futuro); en presente se omite"},
+    {"regla": "какой + adjetivo pregunta \"cómo es\"", "ejemplos": "Какой дом? — Он старый."}
+   ],
+   "frases": [
+    {"ru": "Кто он? Он друг.", "ru_stress": "Кто он? Он друг.", "es": "¿Quién es él? Es un amigo.", "nota": "он reemplaza a un varón ya mencionado; sin verbo, como siempre."},
+    {"ru": "Где сын и дочь? Они здесь, а мама там.", "ru_stress": "Где сын и дочь? Они́ здесь, а ма́ма там.", "es": "¿Dónde están el hijo y la hija? Están aquí, y mamá está allí.", "nota": "они porque son dos personas; dos frases seguidas, ninguna con verbo."},
+    {"ru": "Какой это чай? Он горячий.", "ru_stress": "Како́й э́то чай? Он горя́чий.", "es": "¿Cómo es este té? Está caliente.", "nota": "чай es masculino, así que он y el adjetivo también van en masculino."},
+    {"ru": "Дом старый, а стол новый.", "ru_stress": "Дом ста́рый, а стол но́вый.", "es": "La casa es vieja, y la mesa es nueva.", "nota": "sustantivo + adjetivo, directo, sin nada en medio."},
+    {"ru": "Ты не ребёнок, ты большой.", "ru_stress": "Ты не ребёнок, ты большо́й.", "es": "Tú no eres un niño, eres grande.", "nota": "misma negación que en días anteriores: не va justo antes de lo que se niega."},
+    {"ru": "Здравствуйте! Всё хорошо, спасибо.", "ru_stress": "Здра́вствуйте! Всё хорошо́, спаси́бо.", "es": "¡Hola! Todo bien, gracias.", "nota": "saludo corto, con dos palabras del repaso de hoy."}
+   ]
+  }
+ ]
+}
