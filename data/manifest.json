@@ -206,7 +206,7 @@
   },
   {
    "id": "2026-09-02",
-   "titulo": "Урок 10",
+   "titulo": "Урок 11",
    "origen": "ia",
    "fecha": "2026-09-02",
    "formato": "lesson-json",
@@ -217,6 +217,20 @@
     "Pronombres personales y la ausencia de \"ser\""
    ],
    "entradas": 16
+  },
+  {
+      "id": "2026-09-01",
+      "titulo": "Урок 10",
+      "origen": "ia",
+      "fecha": "2026-09-01",
+      "formato": "lesson-json",
+      "path": "lessons/generated/2026-09-01/lesson.json",
+      "semana": 2,
+      "duracion_min": 15,
+      "temas": [
+          "Pronombres personales y la ausencia de \"ser\""
+      ],
+      "entradas": 16
   },
   {
    "id": "2026-08-31",
