@@ -1,0 +1,67 @@
+{
+ "version": 1,
+ "fecha": "2026-09-03",
+ "numero": 11,
+ "titulo": "Урок 11",
+ "semana": 2,
+ "gramatica": "Pronombres personales y la ausencia de \"ser\"",
+ "duracion_min": 15,
+ "foco": "Quinto día con pronombres y la frase sin verbo \"ser\". Hoy entran cuatro verbos nuevos de oído — знать, делать, говорить, понимать — sin conjugar todavía; eso llega en unas semanas. El repaso de hoy está cargado de palabras de caja baja, así que puede costar un poco más: es justo lo que toca repetir.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Son verbos: hoy solo memoriza el sonido y el significado, la conjugación llega más adelante.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "знать", "ru_stress": "знать", "translit": "znat'", "es": "saber, conocer"},
+    {"ru": "делать", "ru_stress": "де́лать", "translit": "delat'", "es": "hacer"},
+    {"ru": "говорить", "ru_stress": "говори́ть", "translit": "govorit'", "es": "hablar"},
+    {"ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'", "es": "entender"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "tipo": "repaso",
+   "items": [
+    {"id": 51, "es": "ocho", "ru": "восемь", "ru_stress": "во́семь", "translit": "vosem'"},
+    {"id": 52, "es": "nueve", "ru": "девять", "ru_stress": "де́вять", "translit": "devyat'"},
+    {"id": 53, "es": "diez", "ru": "десять", "ru_stress": "де́сять", "translit": "desyat'"},
+    {"id": 54, "es": "ser, estar", "ru": "быть", "ru_stress": "быть", "translit": "byt'"},
+    {"id": 8, "es": "perdone", "ru": "простите", "ru_stress": "прости́те", "translit": "prostite"},
+    {"id": 39, "es": "cuál, qué tipo de", "ru": "какой", "ru_stress": "како́й", "translit": "kakoi"},
+    {"id": 40, "es": "de quién", "ru": "чей", "ru_stress": "чей", "translit": "chei"},
+    {"id": 41, "es": "aquí", "ru": "здесь", "ru_stress": "здесь", "translit": "zdes'"},
+    {"id": 42, "es": "allí", "ru": "там", "ru_stress": "там", "translit": "tam"},
+    {"id": 6, "es": "por favor / de nada", "ru": "пожалуйста", "ru_stress": "пожа́луйста", "translit": "pozhaluista"},
+    {"id": 7, "es": "disculpe", "ru": "извините", "ru_stress": "извини́те", "translit": "izvinite"},
+    {"id": 3, "es": "adiós", "ru": "до свидания", "ru_stress": "до свида́ния", "translit": "do svidaniya"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Pronombres personales y la ausencia de \"ser\"",
+   "explicacion": "Quinto día con el mismo punto: ninguna de las frases de hoy lleva verbo para \"ser\" — sustantivo, pronombre o adjetivo van pegados directamente. Hoy además se practica не (\"no\") justo delante de la palabra que se niega, y el ajuste de adjetivos como большой/маленький según el género del sustantivo al que acompañan.",
+   "reglas": [
+    {"regla": "Sin verbo \"ser\" en presente (repaso)", "ejemplos": "Ты человек. Он мужчина."},
+    {"regla": "он / она concuerdan con el sustantivo que reemplazan", "ejemplos": "жена → она · муж → он"},
+    {"regla": "не va justo antes de la palabra que se niega", "ejemplos": "не подруга · не мужчина"},
+    {"regla": "los adjetivos concuerdan en género con el sustantivo", "ejemplos": "брат маленький · сестра большая"}
+   ],
+   "frases": [
+    {"ru": "Кто это? Это жена, а не подруга.", "ru_stress": "Кто э́то? Э́то жена́, а не подру́га.", "es": "¿Quién es? Es la esposa, no la amiga.", "nota": "не se coloca justo delante de подруга: se niega esa palabra en concreto."},
+    {"ru": "Где муж? Он там, а жена здесь.", "ru_stress": "Где муж? Он там, а жена́ здесь.", "es": "¿Dónde está el marido? Él está allí, y la esposa está aquí.", "nota": "он reemplaza a муж (masculino), она a жена (femenino)."},
+    {"ru": "Какой это друг — хороший или плохой? Он очень хороший.", "ru_stress": "Како́й э́то друг — хоро́ший и́ли плохо́й? Он о́чень хоро́ший.", "es": "¿Qué clase de amigo es? ¿Bueno o malo? Es muy bueno.", "nota": "хороший concuerda en masculino con друг, como какой."},
+    {"ru": "Это не дочь, это сестра. Она большая, а брат маленький.", "ru_stress": "Э́то не дочь, э́то сестра́. Она́ больша́я, а брат ма́ленький.", "es": "Esta no es la hija, es la hermana. Ella es grande, y el hermano es pequeño.", "nota": "большая (femenino) para сестра, маленький (masculino) para брат."},
+    {"ru": "Мы семья: мама, папа и ребёнок. Мы здесь, а друг там.", "ru_stress": "Мы семья́: ма́ма, па́па и ребёнок. Мы здесь, а друг там.", "es": "Somos una familia: mamá, papá y el niño. Nosotros estamos aquí, y el amigo está allí.", "nota": "мы no cambia por género, a diferencia de он/она."},
+    {"ru": "Извините, кто вы? Я не мужчина, я женщина!", "ru_stress": "Извини́те, кто вы? Я не мужчи́на, я же́нщина!", "es": "Disculpe, ¿quién es usted? ¡No soy un hombre, soy una mujer!", "nota": "manera directa de corregir con не + la palabra negada."}
+   ]
+  }
+ ]
+}
