@@ -1,0 +1,86 @@
+{
+ "version": 1,
+ "fecha": "2026-09-04",
+ "numero": 12,
+ "titulo": "Урок 12",
+ "semana": 2,
+ "gramatica": "Pronombres personales y la ausencia de \"ser\"",
+ "duracion_min": 15,
+ "foco": "Sexta sesión de identidad sin \"ser\": preguntas directas de quién es quién, con он/она sustituyendo al sustantivo y не negando justo la palabra correcta. Entran además cuatro verbos nuevos de uso diario: leer, escribir, trabajar, vivir.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Sin traducir mentalmente: solo sonido y significado.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "читать", "ru_stress": "чита́ть", "translit": "chitat'", "es": "leer"},
+    {"ru": "писать", "ru_stress": "писа́ть", "translit": "pisat'", "es": "escribir"},
+    {"ru": "работать", "ru_stress": "рабо́тать", "translit": "rabotat'", "es": "trabajar"},
+    {"ru": "жить", "ru_stress": "жить", "translit": "zhit'", "es": "vivir"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "tipo": "repaso",
+   "intro": "Lee el español, di el ruso en voz alta antes de tocar. Marca honestamente: de eso depende cuándo vuelve.",
+   "items": [
+    {"id": 55, "es": "saber, conocer", "ru": "знать", "ru_stress": "знать", "translit": "znat'"},
+    {"id": 56, "es": "hacer", "ru": "делать", "ru_stress": "де́лать", "translit": "delat'"},
+    {"id": 57, "es": "hablar", "ru": "говорить", "ru_stress": "говори́ть", "translit": "govorit'"},
+    {"id": 58, "es": "entender", "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'"},
+    {"id": 37, "es": "cuánto", "ru": "сколько", "ru_stress": "ско́лько", "translit": "skol'ko"},
+    {"id": 43, "es": "cero", "ru": "ноль", "ru_stress": "ноль", "translit": "nol'"},
+    {"id": 44, "es": "uno", "ru": "один", "ru_stress": "оди́н", "translit": "odin"},
+    {"id": 45, "es": "dos", "ru": "два", "ru_stress": "два", "translit": "dva"},
+    {"id": 46, "es": "tres", "ru": "три", "ru_stress": "три", "translit": "tri"},
+    {"id": 9, "es": "buenos días", "ru": "доброе утро", "ru_stress": "до́брое у́тро", "translit": "dobroye utro"},
+    {"id": 10, "es": "buenas tardes", "ru": "добрый день", "ru_stress": "до́брый день", "translit": "dobryi den'"},
+    {"id": 13, "es": "sí", "ru": "да", "ru_stress": "да", "translit": "da"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Pronombres personales y la ausencia de \"ser\"",
+   "explicacion": "Sexto día con el mismo punto: hoy la práctica gira en torno a preguntas de identidad — ¿quién es quién — y a cómo он/она sustituyen al sustantivo mencionado justo antes, siempre con el mismo patrón de negación con не.",
+   "reglas": [
+    {"regla": "Sin verbo \"ser\" en presente (repaso)", "ejemplos": "Он друг. Она сестра."},
+    {"regla": "он / она concuerdan con el sustantivo que reemplazan", "ejemplos": "папа → он · дочь → она"},
+    {"regla": "не va justo antes de la palabra que se niega", "ejemplos": "не мама · не муж"},
+    {"regla": "кто / что abren preguntas de identidad sin verbo", "ejemplos": "Кто это? Что это?"}
+   ],
+   "frases": [
+    {"ru": "Кто это - мама или сестра? Это не мама, это сестра.",
+     "ru_stress": "Кто э́то — ма́ма и́ли сестра́? Э́то не ма́ма, э́то сестра́.",
+     "es": "¿Quién es, mamá o la hermana? No es mamá, es la hermana.",
+     "nota": "не se coloca justo delante de мама: se niega esa palabra en concreto."},
+    {"ru": "Добрый день! Ты здесь? Да, я здесь, а брат там.",
+     "ru_stress": "До́брый день! Ты здесь? Да, я здесь, а брат там.",
+     "es": "¡Buenas tardes! ¿Estás aquí? Sí, estoy aquí, y el hermano está allí.",
+     "nota": "здесь/там funcionan solos, sin ningún verbo \"estar\"."},
+    {"ru": "Где сын и дочь? Сын здесь, а дочь там.",
+     "ru_stress": "Где сын и дочь? Сын здесь, а дочь там.",
+     "es": "¿Dónde están el hijo y la hija? El hijo está aquí, y la hija está allí.",
+     "nota": "misma estructura здесь / там, ahora con otro par de sustantivos."},
+    {"ru": "Это муж? Нет, не муж, это друг.",
+     "ru_stress": "Э́то муж? Нет, не муж, э́то друг.",
+     "es": "¿Es el marido? No, no es el marido, es un amigo.",
+     "nota": "нет abre la respuesta y не repite la negación justo sobre муж."},
+    {"ru": "Мужчина там - это папа? Да, это он.",
+     "ru_stress": "Мужчи́на там — э́то па́па? Да, э́то он.",
+     "es": "¿El hombre de allí es papá? Sí, es él.",
+     "nota": "он reemplaza a папа (masculino) sin repetir la palabra."},
+    {"ru": "Извините, кто вы - подруга или жена? Я не подруга, я жена.",
+     "ru_stress": "Извини́те, кто вы — подру́га и́ли жена́? Я не подру́га, я жена́.",
+     "es": "Disculpe, ¿quién es usted, la amiga o la esposa? No soy la amiga, soy la esposa.",
+     "nota": "el mismo patrón «я не X, я Y» de otros días, con otro par de palabras."}
+   ]
+  }
+ ]
+}
