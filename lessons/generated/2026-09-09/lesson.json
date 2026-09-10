@@ -1,0 +1,66 @@
+{
+ "version": 1,
+ "fecha": "2026-09-09",
+ "numero": 13,
+ "titulo": "Урок 13",
+ "semana": 3,
+ "gramatica": "Caso prepositivo: в / на + dónde",
+ "duracion_min": 15,
+ "foco": "Empezamos a decir dónde está algo o alguien. El truco de hoy: la mayoría de sustantivos toman -е (в доме, на работе) y hay que elegir bien entre в (dentro) y на (sobre, o eventos/actividades).",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Sin traducir mentalmente: solo sonido y significado.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "видеть", "ru_stress": "ви́деть", "translit": "videt'", "es": "ver"},
+    {"ru": "слушать", "ru_stress": "слу́шать", "translit": "slushat'", "es": "escuchar"},
+    {"ru": "любить", "ru_stress": "люби́ть", "translit": "lyubit'", "es": "amar, gustar mucho"},
+    {"ru": "думать", "ru_stress": "ду́мать", "translit": "dumat'", "es": "pensar"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "tipo": "repaso",
+   "items": [
+    {"id": 55, "es": "saber, conocer", "ru": "знать", "ru_stress": "знать", "translit": "znat'"},
+    {"id": 57, "es": "hablar", "ru": "говорить", "ru_stress": "говори́ть", "translit": "govorit'"},
+    {"id": 58, "es": "entender", "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'"},
+    {"id": 63, "es": "querer", "ru": "хотеть", "ru_stress": "хоте́ть", "translit": "jotet'"},
+    {"id": 64, "es": "poder", "ru": "мочь", "ru_stress": "мочь", "translit": "moch'"},
+    {"id": 65, "es": "ir (a pie)", "ru": "идти", "ru_stress": "идти́", "translit": "idti"},
+    {"id": 66, "es": "ir (en vehículo)", "ru": "ехать", "ru_stress": "е́хать", "translit": "yejat'"},
+    {"id": 51, "es": "ocho", "ru": "восемь", "ru_stress": "во́семь", "translit": "vosem'"},
+    {"id": 52, "es": "nueve", "ru": "девять", "ru_stress": "де́вять", "translit": "devyat'"},
+    {"id": 53, "es": "diez", "ru": "десять", "ru_stress": "де́сять", "translit": "desyat'"},
+    {"id": 54, "es": "ser, estar", "ru": "быть", "ru_stress": "быть", "translit": "byt'"},
+    {"id": 56, "es": "hacer", "ru": "делать", "ru_stress": "де́лать", "translit": "delat'"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Caso prepositivo: в / на + dónde",
+   "explicacion": "Para decir dónde está algo o alguien, el sustantivo cambia de terminación (caso prepositivo) y va siempre precedido de в o на. в se usa para \"dentro de\" un espacio cerrado; на para superficies, calles abiertas y muchas actividades o eventos. La mayoría de sustantivos toman la terminación -е.",
+   "reglas": [
+    {"regla": "в + prepositivo — dentro de un espacio cerrado (terminación -е)", "ejemplos": "дом → в доме · школа → в школе"},
+    {"regla": "на + prepositivo — sobre una superficie, en la calle, o en una actividad/evento", "ejemplos": "работа → на работе · улица → на улице"},
+    {"regla": "El prepositivo no necesita otra palabra para \"en\": в/на ya lo expresan", "ejemplos": "Я в доме. (no hace falta nada más)"}
+   ],
+   "frases": [
+    {"ru": "Мама сейчас в доме.", "ru_stress": "Ма́ма сейча́с в до́ме.", "es": "Mamá está ahora en casa.", "nota": "дом → в доме: dentro de un espacio cerrado"},
+    {"ru": "Папа работает в школе.", "ru_stress": "Па́па рабо́тает в шко́ле.", "es": "Papá trabaja en la escuela.", "nota": "школа → в школе"},
+    {"ru": "Брат сейчас на работе.", "ru_stress": "Брат сейча́с на рабо́те.", "es": "El hermano está ahora en el trabajo.", "nota": "работа → на работе: actividad, no espacio cerrado"},
+    {"ru": "Друг живёт в городе.", "ru_stress": "Друг живёт в го́роде.", "es": "El amigo vive en la ciudad.", "nota": "город → в городе"},
+    {"ru": "Сестра сейчас в ресторане.", "ru_stress": "Сестра́ сейча́с в рестора́не.", "es": "La hermana está ahora en el restaurante.", "nota": "ресторан → в ресторане"},
+    {"ru": "Дети сейчас на улице.", "ru_stress": "Де́ти сейча́с на у́лице.", "es": "Los niños están ahora en la calle.", "nota": "улица → на улице: superficie abierta"}
+   ]
+  }
+ ]
+}

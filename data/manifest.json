@@ -205,6 +205,20 @@
    ]
   },
   {
+   "id": "2026-09-09",
+   "titulo": "Урок 14",
+   "origen": "ia",
+   "fecha": "2026-09-09",
+   "formato": "lesson-json",
+   "path": "lessons/generated/2026-09-09/lesson.json",
+   "semana": 3,
+   "duracion_min": 15,
+   "temas": [
+    "Caso prepositivo: в / на + dónde"
+   ],
+   "entradas": 16
+  },
+  {
    "id": "2026-09-04",
    "titulo": "Урок 13",
    "origen": "ia",
