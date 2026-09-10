@@ -219,12 +219,12 @@
    "entradas": 16
   },
   {
-   "id": "2026-09-04",
+   "id": "2026-09-05",
    "titulo": "Урок 13",
    "origen": "ia",
-   "fecha": "2026-09-04",
+   "fecha": "2026-09-05",
    "formato": "lesson-json",
-   "path": "lessons/generated/2026-09-04/lesson.json",
+   "path": "lessons/generated/2026-09-05/lesson.json",
    "semana": 2,
    "duracion_min": 15,
    "temas": [
