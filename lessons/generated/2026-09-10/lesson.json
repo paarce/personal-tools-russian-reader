@@ -1,0 +1,66 @@
+{
+ "version": 1,
+ "fecha": "2026-09-10",
+ "numero": 14,
+ "titulo": "Урок 14",
+ "semana": 3,
+ "gramatica": "Caso prepositivo: в / на + dónde",
+ "duracion_min": 15,
+ "foco": "Cuatro verbos nuevos de la vida diaria (comer, beber, estudiar) más agua, y seguimos con dónde: hoy con actividades cotidianas — comer en casa, estudiar en la escuela.",
+ "bloques": [
+  {
+   "n": 1,
+   "titulo": "Calentamiento — palabras nuevas",
+   "minutos": 3,
+   "intro": "Escucha cada una dos veces y repítela en voz alta. Sin traducir mentalmente: solo sonido y significado.",
+   "tipo": "vocabulario",
+   "items": [
+    {"ru": "есть", "ru_stress": "есть", "translit": "yest'", "es": "comer"},
+    {"ru": "пить", "ru_stress": "пить", "translit": "pit'", "es": "beber"},
+    {"ru": "учиться", "ru_stress": "учи́ться", "translit": "uchit'sya", "es": "estudiar, aprender"},
+    {"ru": "вода", "ru_stress": "вода́", "translit": "voda", "es": "agua"}
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Repaso espaciado",
+   "minutos": 6,
+   "intro": "Lee el español, di el ruso en voz alta antes de tocar. Marca honestamente: de eso depende cuándo vuelve.",
+   "tipo": "repaso",
+   "items": [
+    {"id": 38, "ru": "куда", "ru_stress": "куда́", "translit": "kuda", "es": "a dónde"},
+    {"id": 59, "ru": "читать", "ru_stress": "чита́ть", "translit": "chitat'", "es": "leer"},
+    {"id": 60, "ru": "писать", "ru_stress": "писа́ть", "translit": "pisat'", "es": "escribir"},
+    {"id": 54, "ru": "быть", "ru_stress": "быть", "translit": "byt'", "es": "ser, estar"},
+    {"id": 56, "ru": "делать", "ru_stress": "де́лать", "translit": "delat'", "es": "hacer"},
+    {"id": 57, "ru": "говорить", "ru_stress": "говори́ть", "translit": "govorit'", "es": "hablar"},
+    {"id": 58, "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'", "es": "entender"},
+    {"id": 63, "ru": "хотеть", "ru_stress": "хоте́ть", "translit": "jotet'", "es": "querer"},
+    {"id": 55, "ru": "знать", "ru_stress": "знать", "translit": "znat'", "es": "saber, conocer"},
+    {"id": 67, "ru": "видеть", "ru_stress": "ви́деть", "translit": "videt'", "es": "ver"},
+    {"id": 68, "ru": "слушать", "ru_stress": "слу́шать", "translit": "slushat'", "es": "escuchar"},
+    {"id": 69, "ru": "любить", "ru_stress": "люби́ть", "translit": "lyubit'", "es": "amar, gustar mucho"}
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Gramática en contexto",
+   "minutos": 6,
+   "tipo": "gramatica",
+   "tema": "Caso prepositivo: в / на + dónde",
+   "explicacion": "Seguimos con в / на + prepositivo, hoy aplicado a acciones del día a día: dónde comes, dónde bebes agua, dónde estudias. La terminación -е es la misma de siempre; lo que cambia es que ahora la frase entera describe una actividad, no solo un lugar.",
+   "reglas": [
+    {"regla": "в + prepositivo -е: dentro de un sitio", "ejemplos": "дом → в доме · школа → в школе"},
+    {"regla": "на + prepositivo -е: sobre algo o una actividad", "ejemplos": "работа → на работе · урок → на уроке"},
+    {"regla": "el verbo va antes del complemento de lugar, como en español", "ejemplos": "Я ем в доме → Я ем дома (forma fija, no -е)"}
+   ],
+   "frases": [
+    {"ru": "Я ем дома, а не в ресторане.", "ru_stress": "Я ем до́ма, а не в рестора́не.", "es": "Como en casa, no en el restaurante.", "nota": "дома es forma fija (adverbio); ресторан sí lleva -е"},
+    {"ru": "Ты пьёшь воду на работе?", "ru_stress": "Ты пьёшь во́ду на рабо́те?", "es": "¿Bebes agua en el trabajo?", "nota": "работа → на работе"},
+    {"ru": "Мы учимся в школе, а не дома.", "ru_stress": "Мы у́чимся в шко́ле, а не до́ма.", "es": "Estudiamos en la escuela, no en casa.", "nota": "школа → в школе"},
+    {"ru": "Он читает и пишет в комнате.", "ru_stress": "Он чита́ет и пи́шет в ко́мнате.", "es": "Él lee y escribe en la habitación.", "nota": "repaso de читать/писать con в + -е"},
+    {"ru": "Я хочу знать, где ты работаешь.", "ru_stress": "Я хочу́ знать, где ты рабо́таешь.", "es": "Quiero saber dónde trabajas.", "nota": "хотеть + infinitivo, repaso de знать"}
+   ]
+  }
+ ]
+}
