@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "fecha": "2026-09-11",
+  "numero": 15,
+  "titulo": "Урок 15",
+  "semana": 3,
+  "gramatica": "Caso prepositivo: в / на + dónde",
+  "duracion_min": 15,
+  "foco": "Tercer día con в/на + prepositivo: hoy unimos dos lugares o dos verbos en una misma frase, y repasamos comer/beber/vivir/estudiar en sitios distintos.",
+  "bloques": [
+    {
+      "n": 1,
+      "titulo": "Calentamiento — palabras nuevas",
+      "minutos": 3,
+      "intro": "Escucha cada palabra dos veces y repítela en voz alta.",
+      "tipo": "vocabulario",
+      "items": [
+        {"ru": "хлеб", "ru_stress": "хлеб", "translit": "jleb", "es": "pan"},
+        {"ru": "молоко", "ru_stress": "молоко́", "translit": "moloko", "es": "leche"},
+        {"ru": "чай", "ru_stress": "чай", "translit": "chai", "es": "té"},
+        {"ru": "кофе", "ru_stress": "ко́фе", "translit": "kofe", "es": "café"}
+      ]
+    },
+    {
+      "n": 2,
+      "titulo": "Repaso espaciado",
+      "minutos": 6,
+      "tipo": "repaso",
+      "items": [
+        {"id": 71, "ru": "есть", "ru_stress": "есть", "translit": "yest'", "es": "comer"},
+        {"id": 72, "ru": "пить", "ru_stress": "пить", "translit": "pit'", "es": "beber"},
+        {"id": 73, "ru": "учиться", "ru_stress": "учи́ться", "translit": "uchit'sya", "es": "estudiar, aprender"},
+        {"id": 74, "ru": "вода", "ru_stress": "вода́", "translit": "voda", "es": "agua"},
+        {"id": 38, "ru": "куда", "ru_stress": "куда́", "translit": "kuda", "es": "a dónde"},
+        {"id": 59, "ru": "читать", "ru_stress": "чита́ть", "translit": "chitat'", "es": "leer"},
+        {"id": 60, "ru": "писать", "ru_stress": "писа́ть", "translit": "pisat'", "es": "escribir"},
+        {"id": 54, "ru": "быть", "ru_stress": "быть", "translit": "byt'", "es": "ser, estar"},
+        {"id": 56, "ru": "делать", "ru_stress": "де́лать", "translit": "delat'", "es": "hacer"},
+        {"id": 57, "ru": "говорить", "ru_stress": "говори́ть", "translit": "govorit'", "es": "hablar"},
+        {"id": 58, "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'", "es": "entender"},
+        {"id": 63, "ru": "хотеть", "ru_stress": "хоте́ть", "translit": "jotet'", "es": "querer"}
+      ]
+    },
+    {
+      "n": 3,
+      "titulo": "Gramática en contexto",
+      "minutos": 6,
+      "tipo": "gramatica",
+      "tema": "Caso prepositivo: в / на + dónde",
+      "explicacion": "Seguimos con в / на + prepositivo, hoy con frases que combinan dos verbos o dos lugares distintos en una sola oración — comer, beber, vivir, estudiar, cada uno en su sitio. La terminación -е no cambia; lo nuevo es enlazar dos ideas con 'а' para contrastarlas.",
+      "reglas": [
+        {
+          "regla": "в + prepositivo -е: dentro de espacios cerrados",
+          "ejemplos": "дом → в доме · магазин → в магазине"
+        },
+        {
+          "regla": "на + prepositivo -е: superficies, calles y actividades",
+          "ejemplos": "работа → на работе · улица → на улице"
+        },
+        {
+          "regla": "'а' une dos frases para contrastar dos lugares",
+          "ejemplos": "Мы учимся в школе, а живём в городе."
+        },
+        {
+          "regla": "хотеть + infinitivo: el lugar va al final, como en español",
+          "ejemplos": "Ты хочешь пить молоко в магазине?"
+        }
+      ],
+      "frases": [
+        {
+          "ru": "Брат пьёт чай в доме.",
+          "ru_stress": "Брат пьёт чай в до́ме.",
+          "es": "El hermano bebe té en casa.",
+          "nota": "дом → в доме: espacio cerrado"
+        },
+        {
+          "ru": "Сестра ест хлеб в комнате.",
+          "ru_stress": "Сестра́ ест хлеб в ко́мнате.",
+          "es": "La hermana come pan en la habitación.",
+          "nota": "комната → в комнате"
+        },
+        {
+          "ru": "Мы учимся в школе, а живём в городе.",
+          "ru_stress": "Мы у́чимся в шко́ле, а живём в го́роде.",
+          "es": "Estudiamos en la escuela, y vivimos en la ciudad.",
+          "nota": "dos usos de в + -е en una misma frase, unidos con 'а'"
+        },
+        {
+          "ru": "Ты хочешь пить молоко в магазине?",
+          "ru_stress": "Ты хо́чешь пить молоко́ в магази́не?",
+          "es": "¿Quieres beber leche en la tienda?",
+          "nota": "хотеть + infinitivo; магазин → в магазине (espacio cerrado)"
+        },
+        {
+          "ru": "Папа знает, что мы пьём кофе на работе.",
+          "ru_stress": "Па́па зна́ет, что мы пьём ко́фе на рабо́те.",
+          "es": "Papá sabe que bebemos café en el trabajo.",
+          "nota": "работа → на работе; знать + oración con 'что'"
+        },
+        {
+          "ru": "Я вижу дом на улице.",
+          "ru_stress": "Я ви́жу дом на у́лице.",
+          "es": "Veo la casa en la calle.",
+          "nota": "видеть (repaso) + на улице: superficie abierta"
+        }
+      ]
+    }
+  ]
+}
