@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "fecha": "2026-09-12",
+  "numero": 16,
+  "titulo": "Урок 16",
+  "semana": 3,
+  "gramatica": "Caso prepositivo: в / на + dónde",
+  "duracion_min": 15,
+  "foco": "Cuarto día con в/на + prepositivo: metemos la comida en la frase — qué comemos o bebemos y dónde, uniendo dos acciones con и/а.",
+  "bloques": [
+    {
+      "n": 1,
+      "titulo": "Calentamiento — palabras nuevas",
+      "minutos": 3,
+      "intro": "Escucha cada palabra dos veces y repítela en voz alta.",
+      "tipo": "vocabulario",
+      "items": [
+        {"ru": "сыр", "ru_stress": "сыр", "translit": "syr", "es": "queso"},
+        {"ru": "мясо", "ru_stress": "мя́со", "translit": "myaso", "es": "carne"},
+        {"ru": "рыба", "ru_stress": "ры́ба", "translit": "ryba", "es": "pescado"},
+        {"ru": "яблоко", "ru_stress": "я́блоко", "translit": "yabloko", "es": "manzana"}
+      ]
+    },
+    {
+      "n": 2,
+      "titulo": "Repaso espaciado",
+      "minutos": 6,
+      "tipo": "repaso",
+      "items": [
+        {"id": 71, "ru": "есть", "ru_stress": "есть", "translit": "yest'", "es": "comer"},
+        {"id": 72, "ru": "пить", "ru_stress": "пить", "translit": "pit'", "es": "beber"},
+        {"id": 73, "ru": "учиться", "ru_stress": "учи́ться", "translit": "uchit'sya", "es": "estudiar, aprender"},
+        {"id": 74, "ru": "вода", "ru_stress": "вода́", "translit": "voda", "es": "agua"},
+        {"id": 38, "ru": "куда", "ru_stress": "куда́", "translit": "kuda", "es": "a dónde"},
+        {"id": 59, "ru": "читать", "ru_stress": "чита́ть", "translit": "chitat'", "es": "leer"},
+        {"id": 60, "ru": "писать", "ru_stress": "писа́ть", "translit": "pisat'", "es": "escribir"},
+        {"id": 54, "ru": "быть", "ru_stress": "быть", "translit": "byt'", "es": "ser, estar"},
+        {"id": 56, "ru": "делать", "ru_stress": "де́лать", "translit": "delat'", "es": "hacer"},
+        {"id": 57, "ru": "говорить", "ru_stress": "говори́ть", "translit": "govorit'", "es": "hablar"},
+        {"id": 58, "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'", "es": "entender"},
+        {"id": 63, "ru": "хотеть", "ru_stress": "хоте́ть", "translit": "jotet'", "es": "querer"}
+      ]
+    },
+    {
+      "n": 3,
+      "titulo": "Gramática en contexto",
+      "minutos": 6,
+      "tipo": "gramatica",
+      "tema": "Caso prepositivo: в / на + dónde",
+      "explicacion": "Seguimos con в/на + prepositivo, hoy metiendo comida en la frase: qué se come o bebe y en qué lugar. El objeto directo (сыр, мясо, рыбу, яблоко...) no cambia el lugar en -е; lo nuevo es enlazar dos acciones con 'и' (suma) o 'а' (contraste).",
+      "reglas": [
+        {
+          "regla": "в + prepositivo -е: dentro de casas, habitaciones, restaurantes",
+          "ejemplos": "дом → в доме · комната → в комнате · ресторан → в ресторане"
+        },
+        {
+          "regla": "на + prepositivo -е: superficies, calles y actividades",
+          "ejemplos": "работа → на работе · улица → на улице"
+        },
+        {
+          "regla": "'и' suma dos acciones; 'а' las contrasta",
+          "ejemplos": "Я ем сыр и пью чай. · Брат ест мясо, а сестра пьёт молоко."
+        },
+        {
+          "regla": "la comida como objeto directo no cambia el lugar en prepositivo",
+          "ejemplos": "рыба → Мы едим рыбу в ресторане · сыр → Я ем сыр в доме"
+        }
+      ],
+      "frases": [
+        {
+          "ru": "Я ем сыр в доме.",
+          "ru_stress": "Я ем сыр в до́ме.",
+          "es": "Como queso en casa.",
+          "nota": "сыр es inanimado: acusativo = nominativo"
+        },
+        {
+          "ru": "Брат ест мясо на работе.",
+          "ru_stress": "Брат ест мя́со на рабо́те.",
+          "es": "El hermano come carne en el trabajo.",
+          "nota": "на работе: actividad, no espacio cerrado"
+        },
+        {
+          "ru": "Сестра пьёт чай и ест яблоко в комнате.",
+          "ru_stress": "Сестра́ пьёт чай и ест я́блоко в ко́мнате.",
+          "es": "La hermana bebe té y come manzana en la habitación.",
+          "nota": "'и' une dos acciones de la misma persona"
+        },
+        {
+          "ru": "Мы едим рыбу в ресторане, а не дома.",
+          "ru_stress": "Мы еди́м ры́бу в рестора́не, а не до́ма.",
+          "es": "Comemos pescado en el restaurante, y no en casa.",
+          "nota": "рыба → рыбу (femenino, acusativo -у); 'а не' contrasta con negación"
+        },
+        {
+          "ru": "Ты хочешь есть яблоко или пить молоко?",
+          "ru_stress": "Ты хо́чешь есть я́блоко и́ли пить молоко́?",
+          "es": "¿Quieres comer manzana o beber leche?",
+          "nota": "хотеть + infinitivo; 'или' = o"
+        },
+        {
+          "ru": "Папа знает, что мы едим сыр в комнате.",
+          "ru_stress": "Па́па зна́ет, что мы еди́м сыр в ко́мнате.",
+          "es": "Papá sabe que comemos queso en la habitación.",
+          "nota": "знать + oración con 'что'"
+        }
+      ]
+    }
+  ]
+}

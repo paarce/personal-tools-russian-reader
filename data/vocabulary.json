@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "leitner_intervals_days": {
     "1": 1,
     "2": 1,
@@ -1271,7 +1271,7 @@
       "lapses": 0,
       "added": "2026-08-18",
       "source": "base-a1",
-      "introduced": false
+      "introduced": true
     },
     {
       "id": 80,
@@ -1287,7 +1287,7 @@
       "lapses": 0,
       "added": "2026-08-18",
       "source": "base-a1",
-      "introduced": false
+      "introduced": true
     },
     {
       "id": 81,
@@ -1303,7 +1303,7 @@
       "lapses": 0,
       "added": "2026-08-18",
       "source": "base-a1",
-      "introduced": false
+      "introduced": true
     },
     {
       "id": 82,
@@ -1319,7 +1319,7 @@
       "lapses": 0,
       "added": "2026-08-18",
       "source": "base-a1",
-      "introduced": false
+      "introduced": true
     },
     {
       "id": 83,
@@ -2507,14 +2507,14 @@
     }
   ],
   "last_lesson": {
-    "date": "2026-09-11",
+    "date": "2026-09-12",
     "week": 3,
     "grammar": "Caso prepositivo: в / на + dónde",
     "nuevas_ids": [
-      75,
-      76,
-      77,
-      78
+      79,
+      80,
+      81,
+      82
     ],
     "repaso_ids": [
       71,
@@ -2568,6 +2568,32 @@
         76,
         77,
         78
+      ],
+      "repaso_ids": [
+        71,
+        72,
+        73,
+        74,
+        38,
+        59,
+        60,
+        54,
+        56,
+        57,
+        58,
+        63
+      ],
+      "applied": false
+    },
+    {
+      "date": "2026-09-12",
+      "week": 3,
+      "grammar": "Caso prepositivo: в / на + dónde",
+      "nuevas_ids": [
+        79,
+        80,
+        81,
+        82
       ],
       "repaso_ids": [
         71,
