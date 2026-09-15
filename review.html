@@ -46,8 +46,10 @@
     <summary>Ajustes — ElevenLabs, exportar / importar progreso</summary>
     <div style="margin-top:14px">
       <input type="password" id="key" placeholder="sk_… (opcional, mejora la voz)">
+      <div class="tiny" id="keyStatus"></div>
       <div class="actions">
         <button class="ghost" onclick="saveKey()">Guardar clave</button>
+        <button class="ghost" onclick="clearKey()">Borrar clave</button>
         <button class="ghost" onclick="doExport()">Exportar progreso</button>
         <button class="ghost" onclick="document.getElementById('imp').click()">Importar</button>
         <button class="ghost" onclick="doReset()">Reiniciar</button>
@@ -119,8 +121,15 @@ function pintar(){
   z.appendChild(acts);
 }
 
+function pintarKeyStatus(){
+  document.getElementById('keyStatus').textContent =
+    TTS.hasKey() ? '✓ Clave de ElevenLabs guardada en este navegador' : '';
+}
 function saveKey(){const v=document.getElementById('key').value;
-  if(v.trim()){TTS.setKey(v);toast('Clave guardada');}}
+  if(v.trim()){TTS.setKey(v);document.getElementById('key').value='';toast('Clave guardada');pintarKeyStatus();}}
+function clearKey(){
+  TTS.setKey('');document.getElementById('key').value='';toast('Clave eliminada');pintarKeyStatus();
+}
 function doExport(){
   const blob=new Blob([Progress.exportJSON(SEED)],{type:'application/json'});
   const a=document.createElement('a');
@@ -137,6 +146,7 @@ document.getElementById('imp').onchange=e=>{
   f.text().then(t=>{Progress.importJSON(t);toast('Progreso importado');location.reload();});
 };
 
+pintarKeyStatus();
 fetch('data/vocabulary.json').then(r=>r.json()).then(d=>{
   SEED=d;
   pintarCajas();
