@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "fecha": "2026-09-15",
+  "numero": 17,
+  "titulo": "Урок 17",
+  "semana": 3,
+  "gramatica": "Caso prepositivo: в / на + dónde",
+  "duracion_min": 15,
+  "foco": "Quinto día con в/на + prepositivo: на + comidas como evento (на завтраке), y любить + acusativo para decir qué le gusta a cada uno.",
+  "bloques": [
+    {
+      "n": 1,
+      "titulo": "Calentamiento — palabras nuevas",
+      "minutos": 3,
+      "intro": "Escucha cada palabra dos veces y repítela en voz alta.",
+      "tipo": "vocabulario",
+      "items": [
+        {"ru": "суп", "ru_stress": "суп", "translit": "sup", "es": "sopa"},
+        {"ru": "сахар", "ru_stress": "са́хар", "translit": "sajar", "es": "azúcar"},
+        {"ru": "соль", "ru_stress": "соль", "translit": "sol'", "es": "sal"},
+        {"ru": "завтрак", "ru_stress": "за́втрак", "translit": "zavtrak", "es": "desayuno"}
+      ]
+    },
+    {
+      "n": 2,
+      "titulo": "Repaso espaciado",
+      "minutos": 6,
+      "tipo": "repaso",
+      "items": [
+        {"id": 71, "ru": "есть", "ru_stress": "есть", "translit": "yest'", "es": "comer"},
+        {"id": 72, "ru": "пить", "ru_stress": "пить", "translit": "pit'", "es": "beber"},
+        {"id": 73, "ru": "учиться", "ru_stress": "учи́ться", "translit": "uchit'sya", "es": "estudiar, aprender"},
+        {"id": 74, "ru": "вода", "ru_stress": "вода́", "translit": "voda", "es": "agua"},
+        {"id": 38, "ru": "куда", "ru_stress": "куда́", "translit": "kuda", "es": "a dónde"},
+        {"id": 59, "ru": "читать", "ru_stress": "чита́ть", "translit": "chitat'", "es": "leer"},
+        {"id": 60, "ru": "писать", "ru_stress": "писа́ть", "translit": "pisat'", "es": "escribir"},
+        {"id": 54, "ru": "быть", "ru_stress": "быть", "translit": "byt'", "es": "ser, estar"},
+        {"id": 56, "ru": "делать", "ru_stress": "де́лать", "translit": "delat'", "es": "hacer"},
+        {"id": 57, "ru": "говорить", "ru_stress": "говори́ть", "translit": "govorit'", "es": "hablar"},
+        {"id": 58, "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'", "es": "entender"},
+        {"id": 63, "ru": "хотеть", "ru_stress": "хоте́ть", "translit": "jotet'", "es": "querer"}
+      ]
+    },
+    {
+      "n": 3,
+      "titulo": "Gramática en contexto",
+      "minutos": 6,
+      "tipo": "gramatica",
+      "tema": "Caso prepositivo: в / на + dónde",
+      "explicacion": "Quinto día con в/на + prepositivo. Hoy на también sirve para comidas tratadas como evento (на завтраке = 'en el desayuno'), igual que на работе. Y aprovechamos любить + acusativo para contrastar qué le gusta a cada uno.",
+      "reglas": [
+        {
+          "regla": "в + prepositivo -е: dentro de espacios cerrados",
+          "ejemplos": "ресторан → в ресторане · комната → в комнате"
+        },
+        {
+          "regla": "на + prepositivo -е: superficies, actividades y comidas como evento",
+          "ejemplos": "работа → на работе · завтрак → на завтраке"
+        },
+        {
+          "regla": "любить + acusativo: qué le gusta a alguien (masc./fem. inanimados no cambian)",
+          "ejemplos": "сахар → Брат любит сахар · соль → Сестра любит соль"
+        },
+        {
+          "regla": "хотеть/знать + infinitivo o 'что': dos ideas en una frase",
+          "ejemplos": "Сестра хочет знать, где соль. · Папа знает, что мы едим хлеб."
+        }
+      ],
+      "frases": [
+        {
+          "ru": "Папа ест суп в ресторане.",
+          "ru_stress": "Па́па ест суп в рестора́не.",
+          "es": "Papá come sopa en el restaurante.",
+          "nota": "суп es inanimado: acusativo = nominativo"
+        },
+        {
+          "ru": "Мы пьём чай на завтраке.",
+          "ru_stress": "Мы пьём чай на за́втраке.",
+          "es": "Bebemos té en el desayuno.",
+          "nota": "завтрак → на завтраке: comida tratada como evento, como на работе"
+        },
+        {
+          "ru": "Сестра хочет знать, где соль.",
+          "ru_stress": "Сестра́ хо́чет знать, где соль.",
+          "es": "La hermana quiere saber dónde está la sal.",
+          "nota": "хотеть + infinitivo (знать); соль es femenino en -ь, no cambia en este uso"
+        },
+        {
+          "ru": "Брат любит сахар, а сестра любит соль.",
+          "ru_stress": "Брат лю́бит са́хар, а сестра́ лю́бит соль.",
+          "es": "Al hermano le gusta el azúcar, y a la hermana le gusta la sal.",
+          "nota": "любить + acusativo; 'а' contrasta dos personas"
+        },
+        {
+          "ru": "Ты хочешь суп или чай на завтраке?",
+          "ru_stress": "Ты хо́чешь суп и́ли чай на за́втраке?",
+          "es": "¿Quieres sopa o té en el desayuno?",
+          "nota": "'или' = o; misma estructura на завтраке"
+        },
+        {
+          "ru": "Папа знает, что мы едим хлеб и сыр на завтраке.",
+          "ru_stress": "Па́па зна́ет, что мы еди́м хлеб и сыр на за́втраке.",
+          "es": "Papá sabe que comemos pan y queso en el desayuno.",
+          "nota": "знать + oración con 'что'"
+        }
+      ]
+    }
+  ]
+}
