@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "fecha": "2026-09-16",
+  "numero": 18,
+  "titulo": "Урок 18",
+  "semana": 3,
+  "gramatica": "Caso prepositivo: в / на + dónde",
+  "duracion_min": 15,
+  "foco": "Sexto día con в/на + prepositivo: дом tiene una forma fija para 'en casa' (дома, sin preposición visible) frente a в доме/в квартире cuando hablamos del edificio en sí, y ampliamos на + comida como evento con обед y ужин.",
+  "bloques": [
+    {
+      "n": 1,
+      "titulo": "Calentamiento — palabras nuevas",
+      "minutos": 3,
+      "intro": "Escucha cada palabra dos veces y repítela en voz alta.",
+      "tipo": "vocabulario",
+      "items": [
+        {"ru": "обед", "ru_stress": "обе́д", "translit": "obed", "es": "comida, almuerzo"},
+        {"ru": "ужин", "ru_stress": "у́жин", "translit": "uzhin", "es": "cena"},
+        {"ru": "дом", "ru_stress": "дом", "translit": "dom", "es": "casa"},
+        {"ru": "квартира", "ru_stress": "кварти́ра", "translit": "kvartira", "es": "piso, apartamento"}
+      ]
+    },
+    {
+      "n": 2,
+      "titulo": "Repaso espaciado",
+      "minutos": 6,
+      "tipo": "repaso",
+      "items": [
+        {"id": 55, "es": "saber, conocer", "ru": "знать", "ru_stress": "знать", "translit": "znat'"},
+        {"id": 67, "es": "ver", "ru": "видеть", "ru_stress": "ви́деть", "translit": "videt'"},
+        {"id": 68, "es": "escuchar", "ru": "слушать", "ru_stress": "слу́шать", "translit": "slushat'"},
+        {"id": 56, "es": "hacer", "ru": "делать", "ru_stress": "де́лать", "translit": "delat'"},
+        {"id": 73, "es": "estudiar, aprender", "ru": "учиться", "ru_stress": "учи́ться", "translit": "uchit'sya"},
+        {"id": 70, "es": "pensar", "ru": "думать", "ru_stress": "ду́мать", "translit": "dumat'"},
+        {"id": 75, "es": "pan", "ru": "хлеб", "ru_stress": "хлеб", "translit": "jleb"},
+        {"id": 76, "es": "leche", "ru": "молоко", "ru_stress": "молоко́", "translit": "moloko"},
+        {"id": 77, "es": "té", "ru": "чай", "ru_stress": "чай", "translit": "chai"},
+        {"id": 78, "es": "café", "ru": "кофе", "ru_stress": "ко́фе", "translit": "kofe"},
+        {"id": 79, "es": "queso", "ru": "сыр", "ru_stress": "сыр", "translit": "syr"},
+        {"id": 80, "es": "carne", "ru": "мясо", "ru_stress": "мя́со", "translit": "myaso"}
+      ]
+    },
+    {
+      "n": 3,
+      "titulo": "Gramática en contexto",
+      "minutos": 6,
+      "tipo": "gramatica",
+      "tema": "Caso prepositivo: в / на + dónde",
+      "explicacion": "Sexto día con в/на + prepositivo. дом tiene una forma especial para 'en casa': дома, un adverbio fijo sin в visible, distinto de в доме cuando hablamos del edificio en sí (o в квартире para un piso). Además seguimos con на + comida como evento: на обеде, на ужине, igual que на завтраке.",
+      "reglas": [
+        {"regla": "в + prepositivo -е: dentro del edificio en sí", "ejemplos": "дом → в доме · квартира → в квартире"},
+        {"regla": "дома: 'en casa' como adverbio fijo, sin в", "ejemplos": "Я дома. · Сестра дома, а брат в квартире друга."},
+        {"regla": "на + prepositivo -е: comidas como evento (repaso de на завтраке)", "ejemplos": "обед → на обеде · ужин → на ужине"},
+        {"regla": "любить + acusativo: obed/ужin inanimados no cambian de forma", "ejemplos": "Мы любим обед. · Сестра любит ужин."}
+      ],
+      "frases": [
+        {"ru": "Мы дома, а брат в квартире друга.", "ru_stress": "Мы до́ма, а брат в кварти́ре дру́га.", "es": "Estamos en casa, y el hermano está en el piso de un amigo.", "nota": "дома (en casa, fijo) frente a в квартире (dentro del piso)"},
+        {"ru": "Сестра ест суп на обеде, а брат пьёт чай на ужине.", "ru_stress": "Сестра́ ест суп на обе́де, а брат пьёт чай на у́жине.", "es": "La hermana come sopa en el almuerzo, y el hermano bebe té en la cena.", "nota": "на обеде / на ужине: comida tratada como evento"},
+        {"ru": "Папа хочет есть мясо на ужине дома.", "ru_stress": "Па́па хо́чет есть мя́со на у́жине до́ма.", "es": "Papá quiere comer carne en la cena en casa.", "nota": "хотеть + infinitivo; дома refuerza 'en casa'"},
+        {"ru": "Ты знаешь, что я живу в квартире, а не в доме?", "ru_stress": "Ты зна́ешь, что я живу́ в кварти́ре, а не в до́ме?", "es": "¿Sabes que vivo en un piso, y no en una casa?", "nota": "знать + 'что'; 'а не' contrasta dos opciones"},
+        {"ru": "Мы любим обед, а сестра любит ужин.", "ru_stress": "Мы лю́бим обе́д, а сестра́ лю́бит у́жин.", "es": "Nos gusta el almuerzo, y a la hermana le gusta la cena.", "nota": "любить + acusativo (repaso); obed/ужин inanimados = igual en acusativo"},
+        {"ru": "Брат хочет есть завтрак дома, а не на работе.", "ru_stress": "Брат хо́чет есть за́втрак до́ма, а не на рабо́те.", "es": "El hermano quiere desayunar en casa, y no en el trabajo.", "nota": "дома frente a на работе: mismo contraste con distinta preposición"}
+      ]
+    }
+  ]
+}
+
