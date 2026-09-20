@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "fecha": "2026-09-17",
+  "numero": 19,
+  "titulo": "Урок 19",
+  "semana": 3,
+  "gramatica": "Caso prepositivo: в / на + dónde",
+  "duracion_min": 15,
+  "foco": "Vocabulario de la casa (habitación, mesa, silla, ventana) para seguir afianzando в/на + prepositivo: dónde están las cosas.",
+  "bloques": [
+    {
+      "n": 1,
+      "titulo": "Calentamiento — palabras nuevas",
+      "minutos": 3,
+      "intro": "Escucha cada palabra dos veces antes de repetirla.",
+      "tipo": "vocabulario",
+      "items": [
+        {"ru": "комната", "ru_stress": "ко́мната", "translit": "komnata", "es": "habitación"},
+        {"ru": "стол", "ru_stress": "стол", "translit": "stol", "es": "mesa"},
+        {"ru": "стул", "ru_stress": "стул", "translit": "stul", "es": "silla"},
+        {"ru": "окно", "ru_stress": "окно́", "translit": "okno", "es": "ventana"}
+      ]
+    },
+    {
+      "n": 2,
+      "titulo": "Repaso espaciado",
+      "minutos": 6,
+      "tipo": "repaso",
+      "items": [
+        {"id": 56, "ru": "делать", "ru_stress": "де́лать", "translit": "delat'", "es": "hacer"},
+        {"id": 67, "ru": "видеть", "ru_stress": "ви́деть", "translit": "videt'", "es": "ver"},
+        {"id": 68, "ru": "слушать", "ru_stress": "слу́шать", "translit": "slushat'", "es": "escuchar"},
+        {"id": 70, "ru": "думать", "ru_stress": "ду́мать", "translit": "dumat'", "es": "pensar"},
+        {"id": 73, "ru": "учиться", "ru_stress": "учи́ться", "translit": "uchit'sya", "es": "estudiar, aprender"},
+        {"id": 81, "ru": "рыба", "ru_stress": "ры́ба", "translit": "ryba", "es": "pescado"},
+        {"id": 82, "ru": "яблоко", "ru_stress": "я́блоко", "translit": "yabloko", "es": "manzana"},
+        {"id": 58, "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'", "es": "entender"},
+        {"id": 83, "ru": "суп", "ru_stress": "суп", "translit": "sup", "es": "sopa"},
+        {"id": 84, "ru": "сахар", "ru_stress": "са́хар", "translit": "sajar", "es": "azúcar"},
+        {"id": 85, "ru": "соль", "ru_stress": "соль", "translit": "sol'", "es": "sal"},
+        {"id": 86, "ru": "завтрак", "ru_stress": "за́втрак", "translit": "zavtrak", "es": "desayuno"}
+      ]
+    },
+    {
+      "n": 3,
+      "titulo": "Gramática en contexto",
+      "minutos": 6,
+      "tipo": "gramatica",
+      "tema": "Caso prepositivo: в / на + dónde",
+      "explicacion": "Seguimos con в / на + prepositivo, ahora con las cosas de la casa: dónde está la mesa, la silla, la ventana... La terminación -е es la misma que ya conoces de дом → в доме o работа → на работе.",
+      "reglas": [
+        {"regla": "в + prepositivo (-е) = dentro de un espacio cerrado", "ejemplos": "комната → в комнате · дом → в доме"},
+        {"regla": "на + prepositivo (-е) = sobre una superficie, o en actividades", "ejemplos": "стол → на столе · работа → на работе"},
+        {"regla": "La terminación -е en prepositivo vale para masculino, femenino y neutro", "ejemplos": "окно → в окне · квартира → в квартире"}
+      ],
+      "frases": [
+        {"ru": "Стол и стул в комнате.", "ru_stress": "Стол и стул в ко́мнате.", "es": "La mesa y la silla están en la habitación.", "nota": "комната toma -е en prepositivo: комнате"},
+        {"ru": "Мама в комнате пьёт чай.", "ru_stress": "Ма́ма в ко́мнате пьёт чай.", "es": "Mamá está en la habitación bebiendo té.", "nota": "в + комнате = ubicación dentro de un espacio cerrado"},
+        {"ru": "Окно и стол в комнате.", "ru_stress": "Окно́ и стол в ко́мнате.", "es": "La ventana y la mesa están en la habitación.", "nota": "окно es neutro pero también toma -е: окне (aquí en комнате, no en окно, por eso queda окно como sujeto)"},
+        {"ru": "Суп и хлеб на столе.", "ru_stress": "Суп и хлеб на столе́.", "es": "La sopa y el pan están en la mesa.", "nota": "на + superficie = столе"},
+        {"ru": "Брат живёт в доме, а сестра живёт в квартире.", "ru_stress": "Брат живёт в до́ме, а сестра́ живёт в кварти́ре.", "es": "El hermano vive en la casa, y la hermana vive en el apartamento.", "nota": "дом (masc., consonante) → доме; квартира (fem. -а) → квартире"},
+        {"ru": "Папа знает, что стул и стол в комнате.", "ru_stress": "Па́па зна́ет, что стул и стол в ко́мнате.", "es": "Papá sabe que la silla y la mesa están en la habitación.", "nota": "знает, что + caso prepositivo con dos sustantivos nuevos"}
+      ]
+    }
+  ]
+}
