@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "fecha": "2026-09-19",
+  "numero": 19,
+  "titulo": "Урок 19",
+  "semana": 3,
+  "gramatica": "Caso prepositivo: в / на + dónde",
+  "duracion_min": 15,
+  "foco": "Séptimo y último día de la semana con в/на + prepositivo: añadimos vocabulario de objetos de casa (комната, стол, стул, окно) para apoyar la construcción en cosas muy concretas — в комнате, на столе.",
+  "bloques": [
+    {
+      "n": 1,
+      "titulo": "Calentamiento — palabras nuevas",
+      "minutos": 3,
+      "intro": "Escucha cada palabra dos veces y repítela en voz alta.",
+      "tipo": "vocabulario",
+      "items": [
+        {"ru": "комната", "ru_stress": "ко́мната", "translit": "komnata", "es": "habitación"},
+        {"ru": "стол", "ru_stress": "стол", "translit": "stol", "es": "mesa"},
+        {"ru": "стул", "ru_stress": "стул", "translit": "stul", "es": "silla"},
+        {"ru": "окно", "ru_stress": "окно́", "translit": "okno", "es": "ventana"}
+      ]
+    },
+    {
+      "n": 2,
+      "titulo": "Repaso espaciado",
+      "minutos": 6,
+      "tipo": "repaso",
+      "items": [
+        {"id": 56, "ru": "делать", "ru_stress": "де́лать", "translit": "delat'", "es": "hacer"},
+        {"id": 67, "ru": "видеть", "ru_stress": "ви́деть", "translit": "videt'", "es": "ver"},
+        {"id": 68, "ru": "слушать", "ru_stress": "слу́шать", "translit": "slushat'", "es": "escuchar"},
+        {"id": 70, "ru": "думать", "ru_stress": "ду́мать", "translit": "dumat'", "es": "pensar"},
+        {"id": 73, "ru": "учиться", "ru_stress": "учи́ться", "translit": "uchit'sya", "es": "estudiar, aprender"},
+        {"id": 81, "ru": "рыба", "ru_stress": "ры́ба", "translit": "ryba", "es": "pescado"},
+        {"id": 82, "ru": "яблоко", "ru_stress": "я́блоко", "translit": "yabloko", "es": "manzana"},
+        {"id": 58, "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'", "es": "entender"},
+        {"id": 83, "ru": "суп", "ru_stress": "суп", "translit": "sup", "es": "sopa"},
+        {"id": 84, "ru": "сахар", "ru_stress": "са́хар", "translit": "sajar", "es": "azúcar"},
+        {"id": 85, "ru": "соль", "ru_stress": "соль", "translit": "sol'", "es": "sal"},
+        {"id": 86, "ru": "завтрак", "ru_stress": "за́втрак", "translit": "zavtrak", "es": "desayuno"}
+      ]
+    },
+    {
+      "n": 3,
+      "titulo": "Gramática en contexto",
+      "minutos": 6,
+      "tipo": "gramatica",
+      "tema": "Caso prepositivo: в / на + dónde",
+      "explicacion": "Séptimo día con в/на + prepositivo. Hoy metemos objetos concretos de la casa (комната, стол, стул, окно) para que la construcción no quede abstracta: комната → в комнате (dentro), стол → на столе (encima). Seguimos contrastando con дома, el adverbio fijo para 'en casa'.",
+      "reglas": [
+        {"regla": "в + prepositivo -е: dentro de un espacio", "ejemplos": "комната → в комнате · дом → в доме · квартира → в квартире"},
+        {"regla": "на + prepositivo -е: encima de una superficie", "ejemplos": "стол → на столе (repaso: на работе, на обеде)"},
+        {"regla": "дома: 'en casa', adverbio fijo sin в", "ejemplos": "Брат работает дома. · Сестра дома, а не в комнате."},
+        {"regla": "стул y окно no cambian de forma cuando son sujeto (nominativo)", "ejemplos": "Стул в комнате. · Окно в комнате."}
+      ],
+      "frases": [
+        {
+          "ru": "В доме комната, стол и стул.",
+          "ru_stress": "В до́ме ко́мната, стол и стул.",
+          "es": "En la casa hay una habitación, una mesa y una silla.",
+          "nota": "enumeración sin 'есть' — muy común en habla coloquial para listar lo que hay en un sitio"
+        },
+        {
+          "ru": "Стол и стул в комнате.",
+          "ru_stress": "Стол и стул в ко́мнате.",
+          "es": "La mesa y la silla están en la habitación.",
+          "nota": "комната → в комнате: mismo patrón que дом → в доме"
+        },
+        {
+          "ru": "На столе хлеб, сыр и чай.",
+          "ru_stress": "На столе́ хлеб, сыр и чай.",
+          "es": "En la mesa hay pan, queso y té.",
+          "nota": "на столе: 'na' porque es la superficie de la mesa, no su interior"
+        },
+        {
+          "ru": "Ты знаешь, что окно в комнате?",
+          "ru_stress": "Ты зна́ешь, что окно́ в ко́мнате?",
+          "es": "¿Sabes que hay una ventana en la habitación?",
+          "nota": "repaso de знать + 'что'; окно aquí es sujeto, sin declinar"
+        },
+        {
+          "ru": "Мы любим пить чай в комнате дома.",
+          "ru_stress": "Мы лю́бим пить чай в ко́мнате до́ма.",
+          "es": "Nos gusta beber té en la habitación, en casa.",
+          "nota": "любить + infinitivo (repaso); дома refuerza 'en casa' junto a в комнате"
+        },
+        {
+          "ru": "Брат читает в комнате, а сестра работает дома.",
+          "ru_stress": "Брат чита́ет в ко́мнате, а сестра́ рабо́тает до́ма.",
+          "es": "El hermano lee en la habitación, y la hermana trabaja en casa.",
+          "nota": "contraste в комнате (dentro de la habitación) frente a дома (adverbio fijo)"
+        }
+      ]
+    }
+  ]
+}
+
