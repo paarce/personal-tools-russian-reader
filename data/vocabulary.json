@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "leitner_intervals_days": {
     "1": 1,
     "2": 1,
@@ -2532,32 +2532,5 @@
     ],
     "applied": false
   },
-  "pending_lessons": [
-    {
-      "date": "2026-09-19",
-      "week": 3,
-      "grammar": "Caso prepositivo: в / на + dónde",
-      "nuevas_ids": [
-        91,
-        92,
-        93,
-        94
-      ],
-      "repaso_ids": [
-        56,
-        67,
-        68,
-        70,
-        73,
-        81,
-        82,
-        58,
-        83,
-        84,
-        85,
-        86
-      ],
-      "applied": false
-    }
-  ]
+  "pending_lessons": []
 }
