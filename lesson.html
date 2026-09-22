@@ -130,11 +130,12 @@ function renderGenerated(d){
     const marcadas=cards.filter(c=>c.dataset.ok!==undefined).length;
     out.textContent=`RESULTADO ${d.fecha} x ${fallos.length?fallos.join(','):'-'}`;
     out.classList.add('show');
-    if(navigator.clipboard) navigator.clipboard.writeText(out.textContent).catch(()=>{});
+    copyToClipboard(out.textContent).then(ok=>{
+      toast(ok?'Sesión guardada · copiado al portapapeles':'Sesión guardada (no se pudo copiar)');
+    });
     document.getElementById('doneMsg').textContent=
       `${marcadas}/${cards.length} marcadas · progreso guardado en este navegador.`
       + (fallos.length?` ${fallos.length} vuelven a la caja 1.`:' ¡Sin fallos!');
-    toast('Sesión guardada');
   };
   done.append(btn,out);
   document.getElementById('content').appendChild(done);
