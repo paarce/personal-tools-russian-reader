@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "fecha": "2026-09-22",
+  "numero": 21,
+  "titulo": "Урок 21",
+  "semana": 3,
+  "gramatica": "Caso prepositivo: в / на + dónde",
+  "duracion_min": 15,
+  "foco": "Seguimos con в/на + dónde, ahora con las cosas de una habitación: puerta, llave, libro, teléfono. Hoy además se cruzan dos preposiciones en la misma frase para notar la diferencia entre 'dentro de' y 'encima de'.",
+  "bloques": [
+    {
+      "n": 1,
+      "titulo": "Calentamiento — palabras nuevas",
+      "minutos": 3,
+      "intro": "Escucha cada una dos veces y repite en voz alta.",
+      "tipo": "vocabulario",
+      "items": [
+        {"ru": "дверь", "ru_stress": "дверь", "translit": "dver'", "es": "puerta"},
+        {"ru": "книга", "ru_stress": "кни́га", "translit": "kniga", "es": "libro"},
+        {"ru": "телефон", "ru_stress": "телефо́н", "translit": "telefon", "es": "teléfono"},
+        {"ru": "ключ", "ru_stress": "ключ", "translit": "klyuch", "es": "llave"}
+      ]
+    },
+    {
+      "n": 2,
+      "titulo": "Repaso espaciado",
+      "minutos": 6,
+      "tipo": "repaso",
+      "items": [
+        {"id": 56, "es": "hacer", "ru": "делать", "ru_stress": "де́лать", "translit": "delat'"},
+        {"id": 58, "es": "entender", "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'"},
+        {"id": 67, "es": "ver", "ru": "видеть", "ru_stress": "ви́деть", "translit": "videt'"},
+        {"id": 68, "es": "escuchar", "ru": "слушать", "ru_stress": "слу́шать", "translit": "slushat'"},
+        {"id": 70, "es": "pensar", "ru": "думать", "ru_stress": "ду́мать", "translit": "dumat'"},
+        {"id": 73, "es": "estudiar, aprender", "ru": "учиться", "ru_stress": "учи́ться", "translit": "uchit'sya"},
+        {"id": 84, "es": "azúcar", "ru": "сахар", "ru_stress": "са́хар", "translit": "sajar"},
+        {"id": 55, "es": "saber, conocer", "ru": "знать", "ru_stress": "знать", "translit": "znat'"},
+        {"id": 87, "es": "comida, almuerzo", "ru": "обед", "ru_stress": "обе́д", "translit": "obed"},
+        {"id": 88, "es": "cena", "ru": "ужин", "ru_stress": "у́жин", "translit": "uzhin"},
+        {"id": 89, "es": "casa", "ru": "дом", "ru_stress": "дом", "translit": "dom"},
+        {"id": 90, "es": "piso, apartamento", "ru": "квартира", "ru_stress": "кварти́ра", "translit": "kvartira"}
+      ]
+    },
+    {
+      "n": 3,
+      "titulo": "Gramática en contexto",
+      "minutos": 6,
+      "tipo": "gramatica",
+      "tema": "Caso prepositivo: в / на + dónde",
+      "explicacion": "Para decir dónde está algo, el sustantivo cambia de terminación. Hoy vemos también que 'в' y 'на' no son intercambiables: 'в' es dentro de un espacio cerrado (una habitación, una casa) y 'на' es encima de una superficie (una mesa, una silla) o en un evento.",
+      "reglas": [
+        {"regla": "Masculino (consonante) y neutro (-о) → añaden -е", "ejemplos": "дом → в доме · стол → на столе · окно → на окне"},
+        {"regla": "Femenino en -а/-я → cambia a -е", "ejemplos": "комната → в комнате · книга → в книге · квартира → в квартире"},
+        {"regla": "Femenino en -ь → cambia a -и", "ejemplos": "дверь → в двери / на двери"},
+        {"regla": "в = dentro de un espacio; на = encima de una superficie", "ejemplos": "в комнате (dentro) · на столе (encima)"}
+      ],
+      "frases": [
+        {"ru": "Ключ на столе, а книга на стуле.", "ru_stress": "Ключ на столе́, а кни́га на сту́ле.", "es": "La llave está en la mesa y el libro en la silla.", "nota": "стол y стул son masculinos: -е en los dos."},
+        {"ru": "Дверь и окно в комнате.", "ru_stress": "Дверь и окно́ в ко́мнате.", "es": "La puerta y la ventana están en la habitación.", "nota": "комната es femenino en -а → -е; un solo в para los dos sujetos."},
+        {"ru": "Телефон там, на столе.", "ru_stress": "Телефо́н там, на столе́.", "es": "El teléfono está allí, en la mesa.", "nota": "там ya lo conoces; на столе añade el lugar exacto."},
+        {"ru": "Мы живём в доме, а не в квартире.", "ru_stress": "Мы живём в до́ме, а не в кварти́ре.", "es": "Vivimos en una casa, no en un apartamento.", "nota": "дом (masc.) y квартира (fem.) llegan a la misma terminación -е."},
+        {"ru": "Ты знаешь, где ключ? Он в комнате, на столе.", "ru_stress": "Ты зна́ешь, где ключ? Он в ко́мнате, на столе́.", "es": "¿Sabes dónde está la llave? Está en la habitación, sobre la mesa.", "nota": "в комнате (dentro del espacio) + на столе (encima de la superficie) en la misma frase."},
+        {"ru": "Брат читает книгу в комнате, а сестра учится дома.", "ru_stress": "Брат чита́ет кни́гу в ко́мнате, а сестра́ у́чится до́ма.", "es": "El hermano lee el libro en la habitación, y la hermana estudia en casa.", "nota": "дома es una forma fija (en casa), no sigue la regla -е."}
+      ]
+    }
+  ]
+}
+
