@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "fecha": "2026-09-23",
+  "numero": 22,
+  "titulo": "Урок 22",
+  "semana": 3,
+  "gramatica": "Caso prepositivo: в / на + dónde",
+  "duracion_min": 15,
+  "foco": "Hoy tienes 22 palabras con fallos pendientes de repasar, así que la clase es 100% consolidación — nada de vocabulario nuevo. Seguimos con в/на + dónde y añadimos un matiz: la preposición о (sobre, acerca de) también usa el caso prepositivo.",
+  "bloques": [
+    {
+      "n": 1,
+      "titulo": "Repaso espaciado — consolidación",
+      "minutos": 9,
+      "intro": "Estas son las palabras que más veces se te han resistido. Tómate tu tiempo con cada una.",
+      "tipo": "repaso",
+      "items": [
+        {"id": 56, "es": "hacer", "ru": "делать", "ru_stress": "де́лать", "translit": "delat'"},
+        {"id": 73, "es": "estudiar, aprender", "ru": "учиться", "ru_stress": "учи́ться", "translit": "uchit'sya"},
+        {"id": 67, "es": "ver", "ru": "видеть", "ru_stress": "ви́деть", "translit": "videt'"},
+        {"id": 68, "es": "escuchar", "ru": "слушать", "ru_stress": "слу́шать", "translit": "slushat'"},
+        {"id": 87, "es": "comida, almuerzo", "ru": "обед", "ru_stress": "обе́д", "translit": "obed"},
+        {"id": 88, "es": "cena", "ru": "ужин", "ru_stress": "у́жин", "translit": "uzhin"},
+        {"id": 90, "es": "piso, apartamento", "ru": "квартира", "ru_stress": "кварти́ра", "translit": "kvartira"},
+        {"id": 58, "es": "entender", "ru": "понимать", "ru_stress": "понима́ть", "translit": "ponimat'"},
+        {"id": 70, "es": "pensar", "ru": "думать", "ru_stress": "ду́мать", "translit": "dumat'"},
+        {"id": 84, "es": "azúcar", "ru": "сахар", "ru_stress": "са́хар", "translit": "sajar"},
+        {"id": 38, "es": "a dónde", "ru": "куда", "ru_stress": "куда́", "translit": "kuda"},
+        {"id": 54, "es": "ser, estar", "ru": "быть", "ru_stress": "быть", "translit": "byt'"}
+      ]
+    },
+    {
+      "n": 2,
+      "titulo": "Gramática en contexto",
+      "minutos": 6,
+      "tipo": "gramatica",
+      "tema": "Caso prepositivo: в / на + dónde",
+      "explicacion": "Seguimos con el caso prepositivo. Hoy, además de в (dentro) y на (encima / eventos), aparece о (sobre, acerca de) — otra preposición que también exige la terminación -е. Y un recordatorio: los objetos masculinos inanimados y neutros no cambian en acusativo, así que verbos como видеть o слушать no complican la frase todavía.",
+      "reglas": [
+        {"regla": "Masculino (consonante) y neutro (-о) → añaden -е", "ejemplos": "стол → на столе · окно → в окне"},
+        {"regla": "Femenino en -а/-я → cambia a -е", "ejemplos": "квартира → в квартире · подруга → о подруге"},
+        {"regla": "Femenino en -ь → cambia a -и", "ejemplos": "дверь → в двери / на двери"},
+        {"regla": "о también rige el prepositivo (sobre, acerca de); delante de vocal se convierte en об", "ejemplos": "о доме · об этом"}
+      ],
+      "frases": [
+        {"ru": "Брат видит ключ на столе, а телефон — на стуле.", "ru_stress": "Брат ви́дит ключ на столе́, а телефо́н — на сту́ле.", "es": "El hermano ve la llave en la mesa, y el teléfono, en la silla.", "nota": "ключ y телефон son masculinos inanimados: no cambian como objeto, solo el lugar lleva -е."},
+        {"ru": "Ты понимаешь, где ключ? Он в комнате, на столе.", "ru_stress": "Ты понима́ешь, где ключ? Он в ко́мнате, на столе́.", "es": "¿Entiendes dónde está la llave? Está en la habitación, en la mesa.", "nota": "в комнате (dentro del espacio) + на столе (encima de la mesa) en la misma respuesta."},
+        {"ru": "Друг думает о доме, а подруга — о квартире.", "ru_stress": "Друг ду́мает о до́ме, а подру́га — о кварти́ре.", "es": "El amigo piensa en la casa, y la amiga, en el apartamento.", "nota": "о doме y о квартире: misma terminación -е que в/на, aunque el significado sea 'acerca de'."},
+        {"ru": "Мы делаем это в квартире, а не в доме.", "ru_stress": "Мы де́лаем э́то в кварти́ре, а не в до́ме.", "es": "Lo hacemos en el apartamento, no en la casa.", "nota": "это es invariable, así que el objeto no complica la frase — solo el lugar cambia."},
+        {"ru": "Брат учится в квартире, а сестра работает в доме.", "ru_stress": "Брат у́чится в кварти́ре, а сестра́ рабо́тает в до́ме.", "es": "El hermano estudia en el apartamento, y la hermana trabaja en la casa.", "nota": "учиться y работать no llevan objeto directo — perfectos para practicar solo el lugar."},
+        {"ru": "Где ты думаешь об этом — в комнате или в квартире?", "ru_stress": "Где ты ду́маешь об э́том — в ко́мнате и́ли в кварти́ре?", "es": "¿Dónde piensas en esto — en la habitación o en el apartamento?", "nota": "о se convierte en об delante de vocal: об этом."}
+      ]
+    }
+  ]
+}
