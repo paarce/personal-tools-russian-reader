@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "fecha": "2026-09-30",
+  "numero": 23,
+  "titulo": "Урок 23",
+  "semana": 4,
+  "gramatica": "Verbos de primera conjugación (-ать / -ять)",
+  "duracion_min": 28,
+  "foco": "Primera clase del nuevo formato (28 min). Tienes 23 palabras falladas pendientes, así que hoy no entra vocabulario nuevo: todo el repaso son tus 20 palabras más difíciles. Y empezamos semana 4 con la conjugación de -ать — justo el patrón de делать, думать, слушать y понимать, cuatro de tus verbos más fallados.",
+  "bloques": [
+    {
+      "n": 1,
+      "titulo": "Repaso espaciado — tus 20 palabras más falladas",
+      "minutos": 14,
+      "tipo": "repaso",
+      "intro": "Ordenadas de más a menos difícil. Si fallas una, no pasa nada: marcarla es lo que hace que vuelva pronto.",
+      "items": [
+        {
+          "id": 56,
+          "es": "hacer",
+          "ru": "делать",
+          "ru_stress": "де́лать",
+          "translit": "delat'"
+        },
+        {
+          "id": 73,
+          "es": "estudiar, aprender",
+          "ru": "учиться",
+          "ru_stress": "учи́ться",
+          "translit": "uchit'sya"
+        },
+        {
+          "id": 67,
+          "es": "ver",
+          "ru": "видеть",
+          "ru_stress": "ви́деть",
+          "translit": "videt'"
+        },
+        {
+          "id": 68,
+          "es": "escuchar",
+          "ru": "слушать",
+          "ru_stress": "слу́шать",
+          "translit": "slushat'"
+        },
+        {
+          "id": 70,
+          "es": "pensar",
+          "ru": "думать",
+          "ru_stress": "ду́мать",
+          "translit": "dumat'"
+        },
+        {
+          "id": 88,
+          "es": "cena",
+          "ru": "ужин",
+          "ru_stress": "у́жин",
+          "translit": "uzhin"
+        },
+        {
+          "id": 90,
+          "es": "piso, apartamento",
+          "ru": "квартира",
+          "ru_stress": "кварти́ра",
+          "translit": "kvartira"
+        },
+        {
+          "id": 87,
+          "es": "comida, almuerzo",
+          "ru": "обед",
+          "ru_stress": "обе́д",
+          "translit": "obed"
+        },
+        {
+          "id": 58,
+          "es": "entender",
+          "ru": "понимать",
+          "ru_stress": "понима́ть",
+          "translit": "ponimat'"
+        },
+        {
+          "id": 57,
+          "es": "hablar",
+          "ru": "говорить",
+          "ru_stress": "говори́ть",
+          "translit": "govorit'"
+        },
+        {
+          "id": 63,
+          "es": "querer",
+          "ru": "хотеть",
+          "ru_stress": "хоте́ть",
+          "translit": "jotet'"
+        },
+        {
+          "id": 72,
+          "es": "beber",
+          "ru": "пить",
+          "ru_stress": "пить",
+          "translit": "pit'"
+        },
+        {
+          "id": 55,
+          "es": "saber, conocer",
+          "ru": "знать",
+          "ru_stress": "знать",
+          "translit": "znat'"
+        },
+        {
+          "id": 84,
+          "es": "azúcar",
+          "ru": "сахар",
+          "ru_stress": "са́хар",
+          "translit": "sajar"
+        },
+        {
+          "id": 38,
+          "es": "a dónde",
+          "ru": "куда",
+          "ru_stress": "куда́",
+          "translit": "kuda"
+        },
+        {
+          "id": 11,
+          "es": "buenas noches (al saludar)",
+          "ru": "добрый вечер",
+          "ru_stress": "до́брый ве́чер",
+          "translit": "dobryi vecher"
+        },
+        {
+          "id": 12,
+          "es": "buenas noches (al despedirse)",
+          "ru": "спокойной ночи",
+          "ru_stress": "споко́йной но́чи",
+          "translit": "spokoinoi nochi"
+        },
+        {
+          "id": 54,
+          "es": "ser, estar",
+          "ru": "быть",
+          "ru_stress": "быть",
+          "translit": "byt'"
+        },
+        {
+          "id": 8,
+          "es": "perdone",
+          "ru": "простите",
+          "ru_stress": "прости́те",
+          "translit": "prostite"
+        },
+        {
+          "id": 15,
+          "es": "mucho gusto",
+          "ru": "очень приятно",
+          "ru_stress": "о́чень прия́тно",
+          "translit": "ochen' priyatno"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "titulo": "Gramática en contexto",
+      "minutos": 14,
+      "tipo": "gramatica",
+      "tema": "Verbos de primera conjugación (-ать / -ять)",
+      "explicacion": "La mayoría de verbos que terminan en -ать siguen el mismo molde: quitas -ть y añades una terminación según quién hace la acción. Aprende uno (читать) y tienes делать, думать, слушать, понимать, работать y знать gratis.",
+      "reglas": [
+        {
+          "regla": "Quita -ть y añade: я -ю · ты -ешь · он/она -ет · мы -ем · вы -ете · они -ют",
+          "ejemplos": "читать → я читаю, ты читаешь, он читает, мы читаем, вы читаете, они читают"
+        },
+        {
+          "regla": "El mismo molde vale para tus verbos más fallados",
+          "ejemplos": "делать → я делаю · думать → ты думаешь · слушать → они слушают · понимать → мы понимаем"
+        },
+        {
+          "regla": "El acento se queda en la misma sílaba que en el infinitivo",
+          "ejemplos": "де́лать → де́лаю, де́лаешь · понима́ть → понима́ю, понима́ешь"
+        },
+        {
+          "regla": "Negación: не justo delante del verbo",
+          "ejemplos": "Я не понимаю. · Мы не знаем."
+        },
+        {
+          "regla": "La pregunta es la misma frase con entonación de pregunta, sin cambiar el orden",
+          "ejemplos": "Ты понимаешь. → Ты понимаешь?"
+        }
+      ],
+      "frases": [
+        {
+          "ru": "Я делаю обед, а ты делаешь ужин.",
+          "ru_stress": "Я де́лаю обе́д, а ты де́лаешь у́жин.",
+          "es": "Yo hago la comida y tú haces la cena.",
+          "nota": "я -ю / ты -ешь con el mismo verbo."
+        },
+        {
+          "ru": "Что вы делаете? — Мы слушаем и думаем.",
+          "ru_stress": "Что вы де́лаете? — Мы слу́шаем и ду́маем.",
+          "es": "¿Qué hacéis? — Escuchamos y pensamos.",
+          "nota": "вы -ете / мы -ем."
+        },
+        {
+          "ru": "Мама думает, что брат работает дома.",
+          "ru_stress": "Ма́ма ду́мает, что брат рабо́тает до́ма.",
+          "es": "Mamá piensa que el hermano trabaja en casa.",
+          "nota": "Dos verbos en tercera persona: -ет."
+        },
+        {
+          "ru": "Я не понимаю, что ты делаешь.",
+          "ru_stress": "Я не понима́ю, что ты де́лаешь.",
+          "es": "No entiendo qué haces.",
+          "nota": "не va pegado delante del verbo."
+        },
+        {
+          "ru": "Они слушают и понимают.",
+          "ru_stress": "Они́ слу́шают и понима́ют.",
+          "es": "Ellos escuchan y entienden.",
+          "nota": "они -ют."
+        },
+        {
+          "ru": "Вы знаете, где мы работаем?",
+          "ru_stress": "Вы зна́ете, где мы рабо́таем?",
+          "es": "¿Sabéis dónde trabajamos?",
+          "nota": "знать también es -ать: зна́ю, зна́ешь, зна́ет…"
+        },
+        {
+          "ru": "Сестра читает, а я думаю о квартире.",
+          "ru_stress": "Сестра́ чита́ет, а я ду́маю о кварти́ре.",
+          "es": "La hermana lee y yo pienso en el apartamento.",
+          "nota": "Repaso de la semana pasada: о + prepositivo (-е)."
+        },
+        {
+          "ru": "Где вы читаете — дома или на работе?",
+          "ru_stress": "Где вы чита́ете — до́ма и́ли на рабо́те?",
+          "es": "¿Dónde leéis, en casa o en el trabajo?",
+          "nota": "Conjugación + на работе (prepositivo)."
+        },
+        {
+          "ru": "Подруга знает, что мы не понимаем.",
+          "ru_stress": "Подру́га зна́ет, что мы не понима́ем.",
+          "es": "La amiga sabe que no entendemos.",
+          "nota": "Tercera persona -ет y primera plural -ем en la misma frase."
+        }
+      ]
+    }
+  ]
+}

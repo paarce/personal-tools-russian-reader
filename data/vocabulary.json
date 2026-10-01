@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-27",
+  "updated": "2026-09-30",
   "leitner_intervals_days": {
     "1": 1,
     "2": 1,
@@ -2507,25 +2507,63 @@
     }
   ],
   "last_lesson": {
-    "date": "2026-09-23",
-    "week": 3,
-    "grammar": "Caso prepositivo: в / на + dónde",
+    "date": "2026-09-30",
+    "week": 4,
+    "grammar": "Verbos de primera conjugación (-ать / -ять)",
     "nuevas_ids": [],
     "repaso_ids": [
       56,
       73,
       67,
       68,
-      87,
+      70,
       88,
       90,
+      87,
       58,
-      70,
+      57,
+      63,
+      72,
+      55,
       84,
       38,
-      54
+      11,
+      12,
+      54,
+      8,
+      15
     ],
     "applied": false
   },
-  "pending_lessons": []
+  "pending_lessons": [
+    {
+      "date": "2026-09-30",
+      "week": 4,
+      "grammar": "Verbos de primera conjugación (-ать / -ять)",
+      "nuevas_ids": [],
+      "repaso_ids": [
+        56,
+        73,
+        67,
+        68,
+        70,
+        88,
+        90,
+        87,
+        58,
+        57,
+        63,
+        72,
+        55,
+        84,
+        38,
+        11,
+        12,
+        54,
+        8,
+        15
+      ],
+      "applied": false
+    }
+  ]
 }
